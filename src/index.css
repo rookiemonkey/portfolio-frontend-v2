@@ -1,13 +1,24 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway';
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Don Jose";
+  src: url("./fonts/donjose.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./fonts/raleway_bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./fonts/raleway_normal.woff2") format("woff2");
+  font-weight: 400;
 }
