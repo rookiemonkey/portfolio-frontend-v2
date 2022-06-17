@@ -1,0 +1,15 @@
+:root {
+  /* COLORS */
+  --gray: #C5C6C7;
+  --gray-lighter: #E0E0E1;
+  --gray-lightest: #FAFAFA;
+  --blue: #64FCF2;
+  --blue-lighter: #C8FEFA;
+  --blue-lightest: #FAFFFF;
+  --darkblue: #1F2833;
+  --darkblue-lighter: #455A72;
+  --darkblue-lightest: #738CAA;
+
+  /* LAYOUT */
+  --global-padding: 0 5% 0 5%;
+}

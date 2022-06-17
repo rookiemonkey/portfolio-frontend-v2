@@ -1,7 +1,15 @@
+import Backdrop from './components/Backdrop';
+import Contain from './components/Contain';
 import Home from './pages/Home';
 
 function App() {
-  return (<Home></Home>);
+  return (
+    <Backdrop>
+      <Contain>
+        <Home></Home>
+      </Contain>
+    </Backdrop>
+  );
 }
 
 export default App;

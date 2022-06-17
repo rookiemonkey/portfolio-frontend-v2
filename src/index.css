@@ -7,18 +7,18 @@
 
 @font-face {
   font-family: "Don Jose";
-  src: url("./fonts/donjose.otf") format("opentype");
+  src: url("./assets/fonts/donjose.otf") format("opentype");
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Raleway";
-  src: url("./fonts/raleway_bold.woff2") format("woff2");
+  src: url("./assets/fonts/raleway_bold.woff2") format("woff2");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Raleway";
-  src: url("./fonts/raleway_normal.woff2") format("woff2");
+  src: url("./assets/fonts/raleway_normal.woff2") format("woff2");
   font-weight: 400;
 }
