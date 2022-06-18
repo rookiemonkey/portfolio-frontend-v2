@@ -29,6 +29,7 @@ const Home = () => {
       </Relative>
 
       <div className={styles['contents']}>
+        
         <div className={styles['contents-left']}>
 
           <div className={styles['header-container']}>
