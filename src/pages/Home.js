@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SVGIcon from '../components/SVGIcon';
-import styles from '../styles/Home.module.css'
+import Relative from '../components/Relative';
+import Float from '../components/Float';
+import styles from '../styles/Home.module.css';
+import { ReactComponent as Cartoon } from '../assets/images/cartoon.svg';
 
 const Home = props => {
   return (
     <React.Fragment>
+
+      <Relative>
+        <Float leftOffset={1.75} topOffset={0.05}>
+          <Cartoon className={styles['cartoon']} />
+        </Float>
+      </Relative>
+
       <div className={styles['contents']}>
         <div className={styles['contents-left']}>
 
@@ -42,7 +52,9 @@ const Home = props => {
           </div>
 
         </div>
+
         <div className={styles['contents-right']}></div>
+
       </div>
     </React.Fragment>
   )

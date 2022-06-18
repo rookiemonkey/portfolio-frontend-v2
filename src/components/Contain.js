@@ -1,9 +1,8 @@
 import React from 'react';
-import styles from '../styles/Contain.module.css';
 
 const Contain = props => {
   return (
-    <div className={styles['contain']}>{props.children}</div>
+    <div className='contain'>{props.children}</div>
   )
 }
 

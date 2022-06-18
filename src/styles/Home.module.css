@@ -80,3 +80,9 @@
   font-size: 2rem;
   font-weight: 700;
 }
+
+.cartoon {
+  position: absolute;
+  width: 350;
+  height: auto;
+}
