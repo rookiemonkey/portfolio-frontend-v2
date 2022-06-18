@@ -4,14 +4,27 @@ import Relative from '../components/Relative';
 import Float from '../components/Float';
 import styles from '../styles/Home.module.css';
 import { ReactComponent as Cartoon } from '../assets/images/cartoon.svg';
+import { ReactComponent as Splat } from '../assets/images/splat.svg';
 
 const Home = () => {
   return (
     <React.Fragment>
 
       <Relative>
-        <Float leftOffset={1.75} topOffset={1.75}>
+        <Float leftOffset={1.75} topOffset={1.75} zindex={1}>
           <Cartoon className={styles['cartoon']} />
+        </Float>
+      </Relative>
+
+      <Relative>
+        <Float leftOffset={2} topOffset={2.5} zindex={0}>
+          <Splat className={styles['splat1']} />
+        </Float>
+      </Relative>
+
+      <Relative>
+        <Float leftOffset={1.45} topOffset={1.35} zindex={0}>
+          <Splat className={styles['splat2']} />
         </Float>
       </Relative>
 

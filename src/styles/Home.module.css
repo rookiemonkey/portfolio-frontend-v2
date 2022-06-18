@@ -81,8 +81,29 @@
   font-weight: 700;
 }
 
-.cartoon {
+.cartoon,
+.splat1,
+.splat2 {
   position: absolute;
-  width: 350;
   height: auto;
+}
+
+.splat1,
+.splat2 {
+  width: 400px;
+}
+
+.cartoon {
+  width: 350;
+}
+
+.splat1 {
+  fill: var(--blue-lighter);
+  opacity: 0.25;
+}
+
+.splat2 {
+  fill: var(--blue);
+  opacity: 0.25;
+  transform: rotate(90);
 }
