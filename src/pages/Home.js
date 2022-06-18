@@ -1,16 +1,16 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import SVGIcon from '../components/SVGIcon';
 import Relative from '../components/Relative';
 import Float from '../components/Float';
 import styles from '../styles/Home.module.css';
 import { ReactComponent as Cartoon } from '../assets/images/cartoon.svg';
 
-const Home = props => {
+const Home = () => {
   return (
     <React.Fragment>
 
       <Relative>
-        <Float leftOffset={1.75} topOffset={0.05}>
+        <Float leftOffset={1.75} topOffset={1.75}>
           <Cartoon className={styles['cartoon']} />
         </Float>
       </Relative>
