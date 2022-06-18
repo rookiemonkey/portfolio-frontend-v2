@@ -35,6 +35,13 @@ body {
   position: absolute;
 }
 
+.halftone {
+  width: 90vh;
+  transform: rotate(90deg);
+  fill: var(--blue-lighter);
+  opacity: 0.1;
+}
+
 @font-face {
   font-family: "Don Jose";
   src: url("./assets/fonts/donjose.otf") format("opentype");
