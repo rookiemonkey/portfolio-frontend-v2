@@ -37,3 +37,12 @@
   color: var(--blue);
   font-weight: 700;
 }
+
+.icons {
+  margin-top: 1%;
+}
+
+.icons svg {
+  fill: var(--blue);
+  margin-right: 1%;
+}

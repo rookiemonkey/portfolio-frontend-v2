@@ -10,6 +10,9 @@
   --darkblue-lighter: #455A72;
   --darkblue-lightest: #738CAA;
 
+  /* COLORS per ELEMENT */
+  --for-backdrop: var(--darkblue);
+
   /* LAYOUT */
   --global-padding: 0 5% 0 5%;
 }
