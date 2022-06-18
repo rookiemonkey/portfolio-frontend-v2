@@ -37,13 +37,15 @@
 }
 
 .subheader {
+  width: max-content;
   font-size: 2rem;
   color: var(--blue);
   font-weight: 700;
+  border-bottom: 1px solid var(--blue);
 }
 
 .icons {
-  margin-top: 2.5%;
+  margin-top: 1%;
 }
 
 .icons svg {

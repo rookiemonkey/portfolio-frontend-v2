@@ -18,8 +18,12 @@ const Home = props => {
             </p>
 
             <div className={styles['icons']}>
-              <SVGIcon id='github' height="40" width="40" viewBox="0 0 30 30" />
-              <SVGIcon id='linkedin' height="40" width="40" viewBox="0 0 30 30" />
+              <a href="https://github.com/rookiemonkey" target="_blank" rel="noreferrer">
+                <SVGIcon id='github' height="40" width="40" viewBox="0 0 30 30" />
+              </a>
+              <a href='https://www.linkedin.com/in/kevin-roi-basina/' target="_blank" rel="noreferrer">
+                <SVGIcon id='linkedin' height="40" width="40" viewBox="0 0 30 30" />
+              </a>
             </div>
           </div>
 

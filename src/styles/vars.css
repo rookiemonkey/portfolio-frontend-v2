@@ -1,14 +1,14 @@
 :root {
   /* COLORS */
-  --gray: #C5C6C7;
-  --gray-lighter: #E0E0E1;
-  --gray-lightest: #FAFAFA;
-  --blue: #64FCF2;
-  --blue-lighter: #C8FEFA;
-  --blue-lightest: #FAFFFF;
-  --darkblue: #1F2833;
-  --darkblue-lighter: #455A72;
-  --darkblue-lightest: #738CAA;
+  --gray: rgb(198, 199, 200);
+  --gray-lighter: rgb(224, 224, 225);
+  --gray-lightest: rgb(250, 250, 250);
+  --blue: rgb(100, 252, 242);
+  --blue-lighter: rgb(200, 254, 250);
+  --blue-lightest: rgb(250, 255, 255);
+  --darkblue: rgb(31, 40, 51);
+  --darkblue-lighter: rgb(69, 90, 114);
+  --darkblue-lightest: rgb(115, 140, 170);
 
   /* COLORS per ELEMENT */
   --for-backdrop: var(--darkblue);
