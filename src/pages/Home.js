@@ -18,13 +18,23 @@ const Home = props => {
             </p>
 
             <div className={styles['icons']}>
-              <SVGIcon id='github' height="40px" width="40px" viewBox="0 0 30 30" />
-              <SVGIcon id='linkedin' height="40px" width="40px" viewBox="0 0 30 30" />
+              <SVGIcon id='github' height="40" width="40" viewBox="0 0 30 30" />
+              <SVGIcon id='linkedin' height="40" width="40" viewBox="0 0 30 30" />
             </div>
           </div>
 
           <div className={styles['navigation-container']}>
-            
+
+            <a href='#' className={styles['navigation-container-link']}>
+              <SVGIcon id='arrow-to-right' height="30" width="30" viewBox="0 0 25 25" />
+              <span>Developer Journey</span>
+            </a>
+
+            <a href='#' className={styles['navigation-container-link']}>
+              <SVGIcon id='arrow-to-right' height="30" width="30" viewBox="0 0 25 25" />
+              <span>Side Projects</span>
+            </a>
+
           </div>
 
         </div>
