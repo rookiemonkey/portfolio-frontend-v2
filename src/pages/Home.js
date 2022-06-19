@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from 'react'
 import styles from '../styles/Home.module.css';
-import SVGIcon from '../components/SVGIcon';
-import Halftone from '../components/Halftone';
+import SVGHalftone from '../components/SVGHalftone';
+import SVGGithubIcon from '../components/SVGGithubIcon';
+import SVGLinkedinIcon from '../components/SVGLinkedinIcon';
+import SVGArrowRight from '../components/SVGArrowRight';
 import normalizeHeight from '../helpers/normalizeHeight';
 
 const Home = () => {
@@ -16,7 +18,7 @@ const Home = () => {
 
       <div className={styles['contents']} ref={contents}>
 
-        <Halftone className={styles['halftone']} leftOffset={-0.1} topOffset={0.05} />
+        <SVGHalftone className={styles['halftone']} leftOffset={-0.1} topOffset={0.05} />
 
         <div className={styles['contents-left']} ref={left}>
 
@@ -31,10 +33,10 @@ const Home = () => {
 
             <div className={styles['icons']}>
               <a href="https://github.com/rookiemonkey" target="_blank" rel="noreferrer">
-                <SVGIcon id='github' height="40" width="40" viewBox="0 0 30 30" />
+                <SVGGithubIcon height="40" width="40" viewBox="0 0 30 30" />
               </a>
               <a href='https://www.linkedin.com/in/kevin-roi-basina/' target="_blank" rel="noreferrer">
-                <SVGIcon id='linkedin' height="40" width="40" viewBox="0 0 30 30" />
+                <SVGLinkedinIcon height="40" width="40" viewBox="0 0 30 30" />
               </a>
             </div>
           </div>
@@ -42,12 +44,12 @@ const Home = () => {
           <div className={styles['navigation-container']}>
 
             <a href='#' className={styles['navigation-container-link']}>
-              <SVGIcon id='arrow-to-right' height="30" width="30" viewBox="0 0 25 25" />
+              <SVGArrowRight height="30" width="30" viewBox="0 0 25 25" />
               <span>Developer Journey</span>
             </a>
 
             <a href='#' className={styles['navigation-container-link']}>
-              <SVGIcon id='arrow-to-right' height="30" width="30" viewBox="0 0 25 25" />
+              <SVGArrowRight height="30" width="30" viewBox="0 0 25 25" />
               <span>Side Projects</span>
             </a>
 

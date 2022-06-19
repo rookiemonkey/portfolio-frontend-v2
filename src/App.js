@@ -1,12 +1,12 @@
-import Backdrop from './components/Backdrop';
-import Contain from './components/Contain';
+import Backdrop from './hocs/Backdrop';
+import Contain from './hocs/Contain';
 import Home from './pages/Home';
 
 function App() {
   return (
     <Backdrop>
       <Contain>
-        <Home></Home>
+        <Home />
       </Contain>
     </Backdrop>
   );

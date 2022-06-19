@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import usePosition from '../helpers/usePosition';
 
-const Halftone = props => {
+const SVGHalftone = props => {
   const [position] = usePosition(props)
 
   return (
@@ -72,4 +72,4 @@ const Halftone = props => {
   )
 }
 
-export default Halftone;
+export default SVGHalftone;
