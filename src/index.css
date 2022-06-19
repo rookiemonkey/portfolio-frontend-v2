@@ -10,6 +10,7 @@
 html,
 body {
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .backdrop {
@@ -19,6 +20,7 @@ body {
 }
 
 .contain {
+  position: relative;
   width: 100vw;
   min-height: 100vh;
   max-width: 1200px;
@@ -29,17 +31,14 @@ body {
   position: relative;
   top: 0;
   left: 0;
+  max-width: 0;
+  max-height: 0;
 }
 
 .float {
   position: absolute;
-}
-
-.halftone {
-  width: 90vh;
-  transform: rotate(90deg);
-  fill: var(--blue-lighter);
-  opacity: 0.1;
+  max-width: 0;
+  max-height: 0;
 }
 
 @font-face {

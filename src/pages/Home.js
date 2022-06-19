@@ -1,36 +1,24 @@
-import React from 'react'
-import SVGIcon from '../components/SVGIcon';
-import Relative from '../components/Relative';
-import Float from '../components/Float';
+import React, { useEffect, useRef } from 'react'
 import styles from '../styles/Home.module.css';
-import { ReactComponent as Cartoon } from '../assets/images/cartoon.svg';
-import { ReactComponent as Splat } from '../assets/images/splat.svg';
+import SVGIcon from '../components/SVGIcon';
+import Halftone from '../components/Halftone';
+import normalizeHeight from '../helpers/normalizeHeight';
 
 const Home = () => {
+  const contents = useRef();
+  const left = useRef();
+  const right = useRef();
+
+  useEffect(() => [contents, left, right].forEach(normalizeHeight), [])
+  
   return (
     <React.Fragment>
 
-      <Relative>
-        <Float leftOffset={1.75} topOffset={1.75} zindex={1}>
-          <Cartoon className={styles['cartoon']} />
-        </Float>
-      </Relative>
+      <div className={styles['contents']} ref={contents}>
 
-      <Relative>
-        <Float leftOffset={2} topOffset={2.5} zindex={0}>
-          <Splat className={styles['splat1']} />
-        </Float>
-      </Relative>
+        <Halftone className={styles['halftone']} leftOffset={-0.1} topOffset={0.05} />
 
-      <Relative>
-        <Float leftOffset={1.45} topOffset={1.35} zindex={0}>
-          <Splat className={styles['splat2']} />
-        </Float>
-      </Relative>
-
-      <div className={styles['contents']}>
-        
-        <div className={styles['contents-left']}>
+        <div className={styles['contents-left']} ref={left}>
 
           <div className={styles['header-container']}>
             <h1 className={styles['header']}>
@@ -67,7 +55,9 @@ const Home = () => {
 
         </div>
 
-        <div className={styles['contents-right']}></div>
+        <div className={styles['contents-right']} ref={right}>
+
+        </div>
 
       </div>
     </React.Fragment>
