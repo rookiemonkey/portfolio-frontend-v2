@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import styles from '../styles/Home.module.css';
+import SVGCartoon from '../components/SVGCartoon';
+import SVGSplat from '../components/SVGSplat';
 import SVGHalftone from '../components/SVGHalftone';
 import SVGGithubIcon from '../components/SVGGithubIcon';
 import SVGLinkedinIcon from '../components/SVGLinkedinIcon';
@@ -58,6 +60,10 @@ const Home = () => {
         </div>
 
         <div className={styles['contents-right']} ref={right}>
+
+          <SVGCartoon className={styles['cartoon']} leftOffset={0.50} topOffset={0.05} />
+          <SVGSplat className={styles['splat1']} leftOffset={0.45} topOffset={0.05} />
+          <SVGSplat className={styles['splat2']} leftOffset={0.60} topOffset={0.2} />
 
         </div>
 
