@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react'
 import styles from '../styles/Home.module.css';
 import SVGCartoon from '../components/SVGCartoon';
 import SVGSplat from '../components/SVGSplat';
-import SVGHalftone from '../components/SVGHalftone';
 import SVGGithubIcon from '../components/SVGGithubIcon';
 import SVGLinkedinIcon from '../components/SVGLinkedinIcon';
 import SVGArrowRight from '../components/SVGArrowRight';
@@ -19,8 +18,6 @@ const Home = () => {
     <React.Fragment>
 
       <div className={styles['contents']} ref={contents}>
-
-        <SVGHalftone className={styles['halftone']} leftOffset={-0.1} topOffset={0.05} />
 
         <div className={styles['contents-left']} ref={left}>
 

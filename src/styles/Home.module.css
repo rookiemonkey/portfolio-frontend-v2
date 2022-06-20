@@ -80,14 +80,6 @@
   font-weight: 700;
 }
 
-.halftone {
-  position: absolute;
-  transform: rotate(90deg);
-  width: 50%;
-  fill: var(--blue-lighter);
-  opacity: 0.1;
-}
-
 .cartoon,
 .splat1,
 .splat2 {

@@ -27,18 +27,11 @@ body {
   margin: 0 auto 0 auto;
 }
 
-.relative {
-  position: relative;
-  top: 0;
-  left: 0;
-  max-width: 0;
-  max-height: 0;
-}
-
-.float {
+.halftone {
   position: absolute;
-  max-width: 0;
-  max-height: 0;
+  width: 50%;
+  fill: var(--blue-lighter);
+  opacity: 0.1;
 }
 
 @font-face {
