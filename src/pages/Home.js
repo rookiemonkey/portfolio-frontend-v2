@@ -9,6 +9,16 @@ import SVGLinkedinIcon from '../components/SVGLinkedinIcon';
 import SVGArrowRight from '../components/SVGArrowRight';
 import normalizeHeight from '../helpers/normalizeHeight';
 
+const headerVariant = {
+  hidden: { y: -99, opacity: 0 },
+  visible: { y: 0, opacity: 1 }
+}
+
+const iconsVariant = {
+  hidden: { x: -99, opacity: 0 }, 
+  visible: { x: 0, opacity: 1 }
+}
+
 const linkVariant = {
   hidden: { x: -99, opacity: 0 },
   visible: { x: 0, opacity: 1 }
@@ -29,22 +39,40 @@ const Home = () => {
         <div className={styles['contents-left']} ref={left}>
 
           <div className={styles['header-container']}>
-            <h1 className={styles['header']}>
+            <motion.h1 
+              variants={headerVariant}
+              animate="visible"
+              initial="hidden"
+              transition={{ delay: 1.25 }}
+              className={styles['header']}
+            >
               KEVIN ROI BASINA
-            </h1>
+            </motion.h1>
 
-            <p className={styles['subheader']}>
+            <motion.p 
+              variants={linkVariant}
+              animate="visible"
+              initial="hidden"
+              transition={{ delay: 1.35 }}
+              className={styles['subheader']}
+            >
               full-stack software developer.
-            </p>
+            </motion.p>
 
-            <div className={styles['icons']}>
+            <motion.div 
+              variants={iconsVariant}
+              animate="visible"
+              initial="hidden"
+              transition={{ delay: 1.25 }}
+              className={styles['icons']}
+            >
               <a href="https://github.com/rookiemonkey" target="_blank" rel="noreferrer">
                 <SVGGithubIcon height="40" width="40" viewBox="0 0 30 30" />
               </a>
               <a href='https://www.linkedin.com/in/kevin-roi-basina/' target="_blank" rel="noreferrer">
                 <SVGLinkedinIcon height="40" width="40" viewBox="0 0 30 30" />
               </a>
-            </div>
+            </motion.div>
           </div>
 
           <div className={styles['navigation-container']}>
