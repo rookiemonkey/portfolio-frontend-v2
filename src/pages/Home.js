@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom';
 import styles from '../styles/Home.module.css';
 import SVGCartoon from '../components/SVGCartoon';
 import SVGSplat from '../components/SVGSplat';
@@ -42,15 +43,15 @@ const Home = () => {
 
           <div className={styles['navigation-container']}>
 
-            <a href='#' className={styles['navigation-container-link']}>
+            <Link to='/developer-journey' className={styles['navigation-container-link']}>
               <SVGArrowRight height="30" width="30" viewBox="0 0 25 25" />
               <span>Developer Journey</span>
-            </a>
+            </Link>
 
-            <a href='#' className={styles['navigation-container-link']}>
+            <Link to='/projects' className={styles['navigation-container-link']}>
               <SVGArrowRight height="30" width="30" viewBox="0 0 25 25" />
-              <span>Side Projects</span>
-            </a>
+              <span>Projects</span>
+            </Link>
 
           </div>
 
