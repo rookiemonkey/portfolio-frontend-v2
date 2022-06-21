@@ -27,13 +27,6 @@ body {
   margin: 0 auto 0 auto;
 }
 
-.halftone {
-  position: absolute;
-  width: 50%;
-  fill: var(--blue-lighter);
-  opacity: 0.1;
-}
-
 @font-face {
   font-family: "Don Jose";
   src: url("./assets/fonts/donjose.otf") format("opentype");
