@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--global-padding);
+  width: 100%;
+}
+
+.circles {
+  position: absolute;
+  height: auto;
+  opacity: 0.35;
+}
+
+.developer-journey {
+  z-index: 2;
+}
