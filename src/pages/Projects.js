@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
+import styles from '../styles/Projects.module.css';
+import SVGProjects from '../components/SVGProjects';
+import normalizeHeight from '../helpers/normalizeHeight';
 
 const Projects = () => {
+  const header = useRef()
+
+  useEffect(() => normalizeHeight(header), [])
 
   return (
-    <h1 style={{ color: 'white' }}>PROJECTS</h1>
+    <React.Fragment>
+
+      <header ref={header} className={styles['header']} >
+        <SVGProjects />
+      </header>
+
+    </React.Fragment>
   )
 }
 

@@ -5,13 +5,3 @@
   padding: var(--global-padding);
   width: 100%;
 }
-
-.circles {
-  position: absolute;
-  height: auto;
-  opacity: 0.5;
-}
-
-.developer-journey {
-  z-index: 2;
-}
