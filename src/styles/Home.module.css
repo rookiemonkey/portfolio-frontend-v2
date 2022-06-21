@@ -80,15 +80,18 @@
 
 .cartoon,
 .splat1,
-.splat2 {
+.splat2,
+.splat3 {
   position: absolute;
   height: auto;
 }
 
 .splat1,
-.splat2 {
+.splat2,
+.splat3 {
   width: 400px;
   z-index: -1;
+  opacity: 0.25;
 }
 
 .cartoon {
@@ -97,11 +100,14 @@
 
 .splat1 {
   fill: var(--blue-lighter);
-  opacity: 0.25;
 }
 
 .splat2 {
+  fill: var(--gray);
+  transform: rotate(90deg);
+}
+
+.splat3 {
   fill: var(--blue);
-  opacity: 0.25;
-  transform: rotate(90);
+  transform: rotate(190deg);
 }
