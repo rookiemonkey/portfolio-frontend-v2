@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import styles from '../styles/Home.module.css';
 import SVGCartoon from '../components/SVGCartoon';
 import SVGSplat from '../components/SVGSplat';
@@ -7,6 +8,11 @@ import SVGGithubIcon from '../components/SVGGithubIcon';
 import SVGLinkedinIcon from '../components/SVGLinkedinIcon';
 import SVGArrowRight from '../components/SVGArrowRight';
 import normalizeHeight from '../helpers/normalizeHeight';
+
+const linkVariant = {
+  hidden: { x: -99, opacity: 0 },
+  visible: { x: 0, opacity: 1 }
+}
 
 const Home = () => {
   const contents = useRef();
@@ -43,15 +49,29 @@ const Home = () => {
 
           <div className={styles['navigation-container']}>
 
-            <Link to='/developer-journey' className={styles['navigation-container-link']}>
-              <SVGArrowRight height="30" width="30" viewBox="0 0 25 25" />
-              <span>Developer Journey</span>
-            </Link>
+            <motion.div
+              variants={linkVariant}
+              animate="visible"
+              initial="hidden"
+              transition={{ delay: 1.25 }}
+            >
+              <Link to='/developer-journey' className={styles['navigation-container-link']}>
+                <SVGArrowRight height="30" width="30" viewBox="0 0 25 25" />
+                <span>Developer Journey</span>
+              </Link>
+            </motion.div>
 
-            <Link to='/projects' className={styles['navigation-container-link']}>
-              <SVGArrowRight height="30" width="30" viewBox="0 0 25 25" />
-              <span>Projects</span>
-            </Link>
+            <motion.div
+              variants={linkVariant}
+              animate="visible"
+              initial="hidden"
+              transition={{ delay: 1.35 }}
+            >
+              <Link to='/projects' className={styles['navigation-container-link']}>
+                <SVGArrowRight height="30" width="30" viewBox="0 0 25 25" />
+                <span>Projects</span>
+              </Link>
+            </motion.div>
 
           </div>
 
