@@ -59,10 +59,10 @@ const Home = () => {
 
         <div className={styles['contents-right']} ref={right}>
 
-          <SVGCartoon className={styles['cartoon']} leftOffset={0.50} topOffset={0.1} />
-          <SVGSplat className={styles['splat1']} leftOffset={0.45} topOffset={0.05} transitionDelay={0.5} />
-          <SVGSplat className={styles['splat2']} leftOffset={0.60} topOffset={0.2} transitionDelay={1} />
-          <SVGSplat className={styles['splat3']} leftOffset={0.45} topOffset={0.33} transitionDelay={0} />
+          <SVGSplat className={styles['splat1']} leftOffset={0.45} topOffset={0.05} transitionDelay={0} />
+          <SVGSplat className={styles['splat2']} leftOffset={0.60} topOffset={0.2} transitionDelay={0.25} />
+          <SVGSplat className={styles['splat3']} leftOffset={0.45} topOffset={0.33} transitionDelay={0.5} />
+          <SVGCartoon className={styles['cartoon']} leftOffset={0.50} topOffset={0.1} transitionDelay={0.6} />
 
         </div>
 
