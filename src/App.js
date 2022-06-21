@@ -1,15 +1,18 @@
 import Backdrop from './hocs/Backdrop';
+import Gradient from './hocs/Gradient';
 import Contain from './hocs/Contain';
 import Home from './pages/Home';
 
 function App() {
   return (
     <Backdrop>
-      <Contain>
+      <Gradient>
+        <Contain>
 
-        <Home />
-        
-      </Contain>
+          <Home />
+
+        </Contain>
+      </Gradient>
     </Backdrop>
   );
 }

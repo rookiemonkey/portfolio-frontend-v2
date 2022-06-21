@@ -19,10 +19,14 @@ body {
   width: 100vw;
 }
 
-.contain {
+.gradient {
+  background: linear-gradient(113.96deg, #000000 0%, #1F2833 49.48%, #000000 100%);
+  margin: 0 auto 0 auto;
+}
+
+.contain-screen {
   position: relative;
   width: 100vw;
-  min-height: 100vh;
   max-width: 1200px;
   margin: 0 auto 0 auto;
 }

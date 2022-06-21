@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import normalizeHeight from '../helpers/normalizeHeight';
 
 const Contain = props => {
+  const _this = useRef()
+
+  useEffect(() => normalizeHeight(_this), [])
+
   return (
-    <div className='contain'>{ props.children }</div>
+    <div ref={_this} className='contain-screen'>{ props.children }</div>
   )
 }
 
