@@ -1,5 +1,3 @@
-@import './vars.css';
-
 .contents {
   display: flex;
   padding: var(--global-padding);
