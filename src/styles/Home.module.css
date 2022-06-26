@@ -92,7 +92,6 @@
 .splat1,
 .splat2,
 .splat3 {
-  display: none;
   width: 400px;
   z-index: -1;
   opacity: 0.25;
@@ -105,15 +104,15 @@
 
 .splat1 {
   fill: var(--blue-lighter);
-  transform: translate(20%, -10%);
+  transform: translate(50%, -25%);
 }
 
 .splat2 {
   fill: var(--gray);
-  transform: translate(70%, 0%) rotate(90deg);
+  transform: translate(100%, 0%) rotate(90deg);
 }
 
 .splat3 {
   fill: var(--blue);
-  transform: translate(40%, 40%) rotate(190deg);
+  transform: translate(50%, 30%) rotate(190deg);
 }
