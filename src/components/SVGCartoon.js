@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext, useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { CenterScreenContext } from "../context/CenterScreen";
 
 const variant = {
   visible: { opacity: 1, scale: 1, originX: 'center', originY: 'center' },
@@ -8,9 +9,20 @@ const variant = {
 
 const SVGCartoon = props => {
   const { transitionDelay } = props
+  const _this = useRef()
+  const [position, setPosition] = useState({ top:0, left:0 })
+  const { centerScreen } = useContext(CenterScreenContext)
+
+  useEffect(() => {
+    let top = centerScreen.y - (_this.current.clientHeight/2)
+    let left = centerScreen.x - (_this.current.clientWidth/2)
+    setPosition({ top, left })
+  }, [centerScreen])
 
   return (
     <svg
+      ref={_this}
+      style={{ top: `${position.top}px`, left: `${position.left}px` }}
       className={props.className}
       xmlnsdc="http://purl.org/dc/elements/1.1/"
       xmlnscc="http://creativecommons.org/ns#"
@@ -19,9 +31,9 @@ const SVGCartoon = props => {
       xmlns="http://www.w3.org/2000/svg"
       xmlnssodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
       xmlnsinkscape="http://www.inkscape.org/namespaces/inkscape"
-      width="190.01311mm"
-      height="228.11667mm"
-      viewBox="0 0 190.01311 228.11667"
+      width="190.01311"
+      height="228.11667"
+      viewBox="-9 25 190.01311 228.11667"
       version="1.1"
       id="svg942"
       inkscapeversion="1.0.2 (e86c870, 2021-01-15)"
