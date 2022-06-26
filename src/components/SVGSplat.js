@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import usePosition from '../helpers/usePosition';
 
 const variant = {
   visible: { opacity: 1, scale: 1 },
@@ -8,13 +7,11 @@ const variant = {
 }
 
 const SVGSplat = props => {
-  const [position] = usePosition(props)
   const { transitionDelay } = props
 
   return (
     <svg
       className={props.className}
-      style={position}
       xmlnsdc="http://purl.org/dc/elements/1.1/"
       xmlnscc="http://creativecommons.org/ns#"
       xmlnsrdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"

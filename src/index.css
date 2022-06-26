@@ -13,6 +13,10 @@ body {
   overflow-y: hidden;
 }
 
+svg {
+  overflow: visible;
+}
+
 .backdrop {
   background-color: var(--for-backdrop);
   min-height: 100vh;

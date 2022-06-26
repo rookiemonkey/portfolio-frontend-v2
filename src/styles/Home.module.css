@@ -84,6 +84,8 @@
 .splat3 {
   position: absolute;
   height: auto;
+  top: 0;
+  left: 0;
 }
 
 .splat1,
@@ -96,18 +98,20 @@
 
 .cartoon {
   width: 450px;
+  transform: translate(155%, 12.5%);
 }
 
 .splat1 {
   fill: var(--blue-lighter);
+  transform: translate(155%, 20%);
 }
 
 .splat2 {
   fill: var(--gray);
-  transform: rotate(90deg);
+  transform: translate(200%, 50%) rotate(90deg);
 }
 
 .splat3 {
   fill: var(--blue);
-  transform: rotate(190deg);
+  transform: translate(165%, 75%) rotate(190deg);
 }

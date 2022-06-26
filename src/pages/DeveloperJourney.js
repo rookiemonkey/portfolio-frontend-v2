@@ -14,7 +14,7 @@ const DeveloperJourney = () => {
 
       <header ref={header} className={styles['header']} >
         <SVGDeveloperJourney className={styles['developer-journey']} />
-        <SVGCircles className={styles['circles']} leftOffset={0.1} topOffset={0.02} />
+        <SVGCircles className={styles['circles']}  />
       </header>
 
     </React.Fragment>

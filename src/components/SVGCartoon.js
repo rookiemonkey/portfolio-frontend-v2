@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import usePosition from '../helpers/usePosition';
 
 const variant = {
   visible: { opacity: 1, scale: 1, originX: 'center', originY: 'center' },
@@ -8,17 +7,11 @@ const variant = {
 }
 
 const SVGCartoon = props => {
-  const [position] = usePosition(props)
   const { transitionDelay } = props
 
   return (
-    <motion.svg
-      style={position}
+    <svg
       className={props.className}
-      variants={variant}
-      initial="hidden"
-      animate="visible"
-      transition={{ type: "spring", stiffness: 100, delay: transitionDelay }}
       xmlnsdc="http://purl.org/dc/elements/1.1/"
       xmlnscc="http://creativecommons.org/ns#"
       xmlnsrdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -66,7 +59,11 @@ const SVGCartoon = props => {
           </ccWork>
         </rdfRDF>
       </metadata>
-      <g
+      <motion.g
+        variants={variant}
+        initial="hidden"
+        animate="visible"
+        transition={{ type: "spring", stiffness: 100, delay: transitionDelay }}
         inkscapelabel="SELF"
         inkscapegroupmode="layer"
         id="layer1"
@@ -101,8 +98,8 @@ const SVGCartoon = props => {
             id="path916"
             sodipodinodetypes="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" />
         </g>
-      </g>
-    </motion.svg>
+      </motion.g>
+    </svg>
   )
 }
 

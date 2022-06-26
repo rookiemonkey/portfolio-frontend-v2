@@ -1,12 +1,8 @@
 import React from "react";
-import usePosition from "../helpers/usePosition";
 
 const SVGProjects = props => {
-  const [position] = usePosition(props)
-
   return(
     <svg 
-      style={position}
       className={props.className}
       width="901" 
       height="588" 
