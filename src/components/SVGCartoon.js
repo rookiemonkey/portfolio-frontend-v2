@@ -10,20 +10,19 @@ const variant = {
 const SVGCartoon = props => {
   const { transitionDelay } = props
   const _this = useRef()
-  const [position, setPosition] = useState({ top: 0, left: 0, translate: '' })
+  const [position, setPosition] = useState({ top: 0, left: 0 })
   const { centerScreen } = useContext(CenterScreenContext)
 
   useEffect(() => {
     let top = centerScreen.y - (_this.current.clientHeight/2)
     let left = centerScreen.x - (_this.current.clientWidth/2)
-    let translate = `translate(${left - (_this.current.clientWidth*0.5)}px, 0)`
-    setPosition({ top, left, translate })
+    setPosition({ top, left })
   }, [centerScreen])
 
   return (
     <svg
       ref={_this}
-      style={{ top: `${position.top}px`, left: `${position.left}px`, transform: position.translate }}
+      style={{ top: `${position.top}px`, left: `${position.left}px` }}
       className={props.className}
       xmlnsdc="http://purl.org/dc/elements/1.1/"
       xmlnscc="http://creativecommons.org/ns#"
