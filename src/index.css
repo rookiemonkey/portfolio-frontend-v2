@@ -33,6 +33,13 @@ svg {
   width: 100vw;
   max-width: 1200px;
   margin: 0 auto 0 auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: var(--screen-scroll); 
+}
+
+.contain-screen::-webkit-scrollbar {
+  display: none;
 }
 
 @font-face {
