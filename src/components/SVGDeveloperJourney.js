@@ -90,10 +90,10 @@ const SVGDeveloperJourney = props => {
           initial="hidden"
           transition={{ delay: 1 }}
           id="LT Symbol">
-          <g id="lt-light" clip-path="url(#clip0_242_43)">
+          <g id="lt-light" clipPath="url(#clip0_242_43)">
             <path id="lt-light-path" d="M97.2666 195.78L28.8346 159.058L97.2666 122.244V92.9116L0.199951 145.005L0.199951 173.124L97.2666 225.205V195.78Z" fill="#FAFAFA" />
           </g>
-          <g id="lt-dark" clip-path="url(#clip1_242_43)">
+          <g id="lt-dark" clipPath="url(#clip1_242_43)">
             <path id="lt-dark-path" d="M97.8667 203.22L29.4347 166.498L97.8667 129.684V100.352L0.800049 152.445L0.800049 180.564L97.8667 232.645V203.22Z" fill="#1F2833" />
           </g>
         </motion.g>
@@ -103,10 +103,10 @@ const SVGDeveloperJourney = props => {
           initial="hidden"
           transition={{ delay: 1 }}
           id="GT Symbol">
-          <g id="gt-light" clip-path="url(#clip2_242_43)">
+          <g id="gt-light" clipPath="url(#clip2_242_43)">
             <path id="gt-light-path" d="M796.2 145.007V173.126L699.133 225.207V195.782L767.565 159.06L699.133 122.246V92.9135L796.2 145.007ZM687.57 53.5L662.357 53.5L613.691 264.62H638.843L687.57 53.5Z" fill="#FAFAFA" />
           </g>
-          <g id="gt-dark" clip-path="url(#clip3_242_43)">
+          <g id="gt-dark" clipPath="url(#clip3_242_43)">
             <path id="gt-dark-path" d="M803.4 155.447V183.566L706.333 235.646V206.222L774.765 169.5L706.333 132.686V103.353L803.4 155.447ZM694.77 63.9399L669.557 63.9399L620.891 275.06H646.043L694.77 63.9399Z" fill="#1F2833" />
           </g>
         </motion.g>
