@@ -9,17 +9,7 @@ import SVGLinkedinIcon from '../components/SVGLinkedinIcon';
 import SVGArrowRight from '../components/SVGArrowRight';
 import normalizeHeight from '../helpers/normalizeHeight';
 
-const headerVariant = {
-  hidden: { y: -99, opacity: 0 },
-  visible: { y: 0, opacity: 1 }
-}
-
-const iconsVariant = {
-  hidden: { x: -99, opacity: 0 }, 
-  visible: { x: 0, opacity: 1 }
-}
-
-const linkVariant = {
+const fadeInToRightVariant = {
   hidden: { x: -99, opacity: 0 },
   visible: { x: 0, opacity: 1 }
 }
@@ -40,7 +30,7 @@ const Home = () => {
 
           <div className={styles['header-container']}>
             <motion.h1 
-              variants={headerVariant}
+              variants={fadeInToRightVariant}
               animate="visible"
               initial="hidden"
               transition={{ delay: 1.25 }}
@@ -50,7 +40,7 @@ const Home = () => {
             </motion.h1>
 
             <motion.p 
-              variants={linkVariant}
+              variants={fadeInToRightVariant}
               animate="visible"
               initial="hidden"
               transition={{ delay: 1.35 }}
@@ -60,10 +50,10 @@ const Home = () => {
             </motion.p>
 
             <motion.div 
-              variants={iconsVariant}
+              variants={fadeInToRightVariant}
               animate="visible"
               initial="hidden"
-              transition={{ delay: 1.25 }}
+              transition={{ delay: 1.45 }}
               className={styles['icons']}
             >
               <a href="https://github.com/rookiemonkey" target="_blank" rel="noreferrer">
@@ -78,10 +68,10 @@ const Home = () => {
           <div className={styles['navigation-container']}>
 
             <motion.div
-              variants={linkVariant}
+              variants={fadeInToRightVariant}
               animate="visible"
               initial="hidden"
-              transition={{ delay: 1.25 }}
+              transition={{ delay: 1.55 }}
             >
               <Link to='/developer-journey' className={styles['navigation-container-link']}>
                 <SVGArrowRight height="30" width="30" viewBox="0 0 25 25" />
@@ -90,10 +80,10 @@ const Home = () => {
             </motion.div>
 
             <motion.div
-              variants={linkVariant}
+              variants={fadeInToRightVariant}
               animate="visible"
               initial="hidden"
-              transition={{ delay: 1.35 }}
+              transition={{ delay: 1.65 }}
             >
               <Link to='/projects' className={styles['navigation-container-link']}>
                 <SVGArrowRight height="30" width="30" viewBox="0 0 25 25" />

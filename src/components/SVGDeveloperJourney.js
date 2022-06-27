@@ -1,4 +1,25 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+const LTSymbolVariant = {
+  hidden: { x: -99, opacity: 0 }, 
+  visible: { x: 0, opacity: 1 }
+}
+
+const GTSymbolVariant = {
+  hidden: { x: 99, opacity: 0 }, 
+  visible: { x: 0, opacity: 1 }
+}
+
+const developerVariant = {
+  hidden: { y: -99, opacity: 0 },
+  visible: { y: 0, opacity: 1 }
+}
+
+const journeyVariant = {
+  hidden: { y: 99, opacity: 0 },
+  visible: { y: 0, opacity: 1 }
+}
 
 const SVGDeveloperJourney = props => {
   return (
@@ -9,7 +30,12 @@ const SVGDeveloperJourney = props => {
       viewBox="0 0 804 328" fill="none" 
       xmlns="http://www.w3.org/2000/svg">
       <g id="Word">
-        <g id="word_journey">
+        <motion.g 
+          variants={journeyVariant}
+          animate="visible"
+          initial="hidden"
+          transition={{ delay: 0.5 }}
+          id="word_journey">
           <g id="journey_shadow">
             <path id="shadow_J" d="M182.269 188.785L152.475 188.79L152.478 203.9L165.133 203.898L165.148 280.684L161.984 283.569L148.801 283.571L145.637 280.687L145.634 265.714L128.496 265.717L128.5 288.52L140.103 298.683L170.556 298.677L182.287 288.51L182.269 188.785Z" fill="#FAFFFF" />
             <path id="shadow_O" d="M240.406 188.772L207.58 188.778L195.981 198.807L195.997 288.505L207.6 298.668L240.426 298.663L252.026 288.496L252.009 198.798L240.406 188.772ZM234.872 206.356L234.886 280.669L231.723 283.554L216.299 283.557L213.134 280.673L213.12 206.359L216.284 203.474L231.708 203.471L234.872 206.356Z" fill="#FAFFFF" />
@@ -28,8 +54,13 @@ const SVGDeveloperJourney = props => {
             <path id="main_E" d="M529.574 196.151L529.571 180.766L480.53 180.774L480.55 290.665L529.591 290.656L529.588 274.997L497.685 275.003L497.679 241.898L522.068 241.894L522.065 226.784L497.676 226.788L497.671 196.156L529.574 196.151Z" fill="#64FCF1" />
             <path id="main_Y" d="M599.046 180.616L582.171 180.619L567.68 234.193L566.757 234.194L552.378 180.624L535.371 180.627L558.719 255.486L558.726 290.651L575.864 290.648L575.857 255.346L599.046 180.616Z" fill="#64FCF1" />
           </g>
-        </g>
-        <g id="word_developer">
+        </motion.g>
+        <motion.g 
+          variants={developerVariant}
+          animate="visible"
+          initial="hidden"
+          transition={{ delay: 0.5 }}
+          id="word_developer">
           <g id="developer_shadow">
             <path id="shadow_D" d="M157.061 44.2202H119.4V150.376H157.061L167.037 140.557V53.9069L157.061 44.2202ZM152.466 61.2051V132.993L149.775 135.78H133.971V58.4185H149.775L152.466 61.2051Z" fill="#C6C7C8" />
             <path id="shadow_E_2" d="M220.502 59.082V44.2202H178.806V150.376H220.502V135.249H193.377V103.269H214.113V88.6729H193.377V59.082H220.502Z" fill="#C6C7C8" />
@@ -52,23 +83,33 @@ const SVGDeveloperJourney = props => {
             <path id="main_E_4" d="M548.999 67.7221V52.8604H507.303V159.016H548.999V143.889H521.874V111.909H542.61V97.3131H521.874V67.7221H548.999Z" fill="#FAFAFA" />
             <path id="main_R_2" d="M593.721 159.016H608.629L599.326 116.156L606.611 108.99V62.5471L596.636 52.8604H558.975V159.016H573.546V118.677H586.324L593.721 159.016ZM573.546 67.0587H589.35L592.04 69.8452V101.692L589.35 104.479H573.546V67.0587Z" fill="#FAFAFA" />
           </g>
-        </g>
-        <g id="LT Symbol">
+        </motion.g>
+        <motion.g 
+          variants={LTSymbolVariant}
+          animate="visible"
+          initial="hidden"
+          transition={{ delay: 1 }}
+          id="LT Symbol">
           <g id="lt-light" clip-path="url(#clip0_242_43)">
             <path id="lt-light-path" d="M97.2666 195.78L28.8346 159.058L97.2666 122.244V92.9116L0.199951 145.005L0.199951 173.124L97.2666 225.205V195.78Z" fill="#FAFAFA" />
           </g>
           <g id="lt-dark" clip-path="url(#clip1_242_43)">
             <path id="lt-dark-path" d="M97.8667 203.22L29.4347 166.498L97.8667 129.684V100.352L0.800049 152.445L0.800049 180.564L97.8667 232.645V203.22Z" fill="#1F2833" />
           </g>
-        </g>
-        <g id="GT Symbol">
+        </motion.g>
+        <motion.g 
+          variants={GTSymbolVariant}
+          animate="visible"
+          initial="hidden"
+          transition={{ delay: 1 }}
+          id="GT Symbol">
           <g id="gt-light" clip-path="url(#clip2_242_43)">
             <path id="gt-light-path" d="M796.2 145.007V173.126L699.133 225.207V195.782L767.565 159.06L699.133 122.246V92.9135L796.2 145.007ZM687.57 53.5L662.357 53.5L613.691 264.62H638.843L687.57 53.5Z" fill="#FAFAFA" />
           </g>
           <g id="gt-dark" clip-path="url(#clip3_242_43)">
             <path id="gt-dark-path" d="M803.4 155.447V183.566L706.333 235.646V206.222L774.765 169.5L706.333 132.686V103.353L803.4 155.447ZM694.77 63.9399L669.557 63.9399L620.891 275.06H646.043L694.77 63.9399Z" fill="#1F2833" />
           </g>
-        </g>
+        </motion.g>
       </g>
       <defs>
         <clipPath id="clip0_242_43">
