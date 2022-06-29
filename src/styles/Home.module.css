@@ -1,6 +1,6 @@
 .contents {
   display: flex;
-  padding: var(--global-padding);
+  padding: var(--global-padding-sides);
 }
 
 .contents-left,
@@ -35,7 +35,7 @@
 
 .subheader {
   width: max-content;
-  font-size: 2rem;
+  font-size: var(--global-font-size-for-subheaders);
   color: var(--blue);
   font-weight: 700;
   border-bottom: 1px solid var(--blue);
@@ -74,7 +74,7 @@
 }
 
 .navigation-container-link span {
-  font-size: 2rem;
+  font-size: var(--global-font-size-for-subheaders);
   font-weight: 700;
 }
 

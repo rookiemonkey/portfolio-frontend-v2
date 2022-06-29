@@ -1,10 +1,29 @@
 @import './styles/vars.css';
 
+@font-face {
+  font-family: "Don Jose";
+  src: url("./assets/fonts/donjose.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./assets/fonts/raleway_bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./assets/fonts/raleway_normal.woff2") format("woff2");
+  font-weight: 400;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Raleway';
+  font-size: 1.25rem;
 }
 
 html,
@@ -40,22 +59,4 @@ svg {
 
 .contain-screen::-webkit-scrollbar {
   display: none;
-}
-
-@font-face {
-  font-family: "Don Jose";
-  src: url("./assets/fonts/donjose.otf") format("opentype");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Raleway";
-  src: url("./assets/fonts/raleway_bold.woff2") format("woff2");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Raleway";
-  src: url("./assets/fonts/raleway_normal.woff2") format("woff2");
-  font-weight: 400;
 }

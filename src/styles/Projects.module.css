@@ -2,6 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: var(--global-padding);
+  padding: var(--global-padding-sides);
   width: 100%;
 }

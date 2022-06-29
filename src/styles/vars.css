@@ -14,7 +14,12 @@
   --for-backdrop: var(--darkblue);
 
   /* LAYOUT */
-  --global-padding: 0 5% 0 5%;
+  --global-padding-all: 5%;
+  --global-padding-sides: 0 5% 0 5%;
+  --global-margin-all: 5%;
+  --global-border-raidius: 35px;
+  --global-font-size-for-headers: 2.5rem;
+  --global-font-size-for-subheaders: 2rem;
 
   /* DYANMIC. BEING CHANGED BY JAVASCRIPT */
   --screen-scroll: initial; /* being set on contain.js */

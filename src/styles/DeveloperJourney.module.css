@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: var(--global-padding);
+  padding: var(--global-padding-sides);
   width: 100%;
 }
 
@@ -14,4 +14,52 @@
 
 .developer-journey {
   z-index: 2;
+}
+
+.experiences {
+  min-height: 100vh;
+}
+
+.experiences_item {
+  color: var(--blue-lightest);
+  border-radius: var(--global-border-raidius);
+  padding: calc(var(--global-padding-all) - 2.5%);
+  margin-bottom: var(--global-margin-all);
+  max-width: 65%;
+}
+
+.experiences_item h1,
+.experiences_item h3 {
+  font-family: "Don Jose";
+  line-height: 47px;
+}
+
+.experiences_item h1 {
+  font-size: var(--global-font-size-for-headers);
+  text-decoration: underline;
+}
+
+.experiences_item h3 {
+  font-size: var(--global-font-size-for-subheaders);
+}
+
+.experiences_item_header_container {
+  margin-bottom: 1.5%;
+}
+
+.experiences_item_1 {
+  background-color: var(--blue);
+}
+
+.experiences_item_2 {
+  background-color: transparent;
+}
+
+.experiences_item_3 {
+  background-color: var(--gray);
+}
+
+.experiences_item_1,
+.experiences_item_3 {
+  color: var(--for-backdrop);
 }
