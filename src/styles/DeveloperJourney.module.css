@@ -11,11 +11,23 @@
 }
 
 .experiences_item {
-  color: var(--blue-lightest);
-  border-radius: var(--global-border-raidius);
-  padding: calc(var(--global-padding-all) - 2.5%);
-  margin-bottom: var(--global-margin-all);
-  max-width: 65%;
+  color: var(--gray);
+  min-width: 100%;
+  display: flex;
+}
+
+.experiences_item,
+.experiences_item .left,
+.experiences_item .right {
+  height: 100vh;
+  max-height: 100%;
+}
+
+.experiences_item .left,
+.experiences_item .right {
+  width: 50%;
+  min-height: 50%;
+  max-width: 50%;
 }
 
 .experiences_item h1,
@@ -37,19 +49,6 @@
   margin-bottom: 1.5%;
 }
 
-.experiences_item_1 {
-  background-color: var(--blue);
-}
-
-.experiences_item_2 {
-  background-color: transparent;
-}
-
-.experiences_item_3 {
-  background-color: var(--gray);
-}
-
-.experiences_item_1,
-.experiences_item_3 {
-  color: var(--for-backdrop);
+.experiences_item_header_container h1 {
+  color: var(--blue);
 }

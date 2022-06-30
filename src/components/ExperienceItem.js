@@ -1,16 +1,23 @@
 import React from "react";
 import styles from '../styles/DeveloperJourney.module.css';
+import ExperienceItemContent from './ExperienceItemContent';
 
 const ExperienceItem = props => {
-  const { title, duration, description, key } = props.data
+  const { title, duration, description, key, render_location } = props.data
+
+  console.log(props.data)
 
   return (
     <article className={`${styles['experiences_item']} ${styles[`experiences_item_${key}`]} `}>
-      <div className={styles['experiences_item_header_container']}>
-        <h1>{title}</h1>
-        <h3>{duration}</h3>
+
+      <div className={styles['left']}>
+        {render_location === 'left' ? <ExperienceItemContent data={{ title, duration, description }} /> : null}
       </div>
-      <p>{ description }</p>
+
+      <div className={styles['right']}>
+        {render_location === 'right' ? <ExperienceItemContent data={{ title, duration, description }} /> : null}
+      </div>
+
     </article>
   )
 }
