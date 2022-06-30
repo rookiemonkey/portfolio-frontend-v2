@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import styles from '../styles/DeveloperJourney.module.css';
 import SVGDeveloperJourney from '../components/SVGDeveloperJourney';
-import SVGCircles from '../components/SVGCircles';
 import ExperienceItem from '../components/ExperienceItem';
 import normalizeHeight from '../helpers/normalizeHeight';
 import experiences from '../data/experiences.json';
@@ -15,8 +14,7 @@ const DeveloperJourney = () => {
     <React.Fragment>
 
       <header ref={header} className={styles['header']} >
-        <SVGDeveloperJourney className={styles['developer-journey']} />
-        <SVGCircles className={styles['circles']}  />
+        <SVGDeveloperJourney />
       </header>
 
       <section className={styles['experiences']} >

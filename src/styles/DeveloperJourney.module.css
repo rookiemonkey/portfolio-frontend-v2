@@ -6,16 +6,6 @@
   width: 100%;
 }
 
-.circles {
-  position: absolute;
-  height: auto;
-  opacity: 0.5;
-}
-
-.developer-journey {
-  z-index: 2;
-}
-
 .experiences {
   min-height: 100vh;
 }
