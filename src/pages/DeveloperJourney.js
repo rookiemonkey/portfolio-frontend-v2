@@ -6,14 +6,14 @@ import normalizeHeight from '../helpers/normalizeHeight';
 import experiences from '../data/experiences.json';
 
 const DeveloperJourney = () => {
-  const header = useRef()
+  const _this = useRef()
 
-  useEffect(() => normalizeHeight(header), [])
+  useEffect(() => normalizeHeight(_this), [])
 
   return (
     <React.Fragment>
 
-      <header ref={header} className={styles['header']} >
+      <header ref={_this} className={styles['header']} >
         <SVGDeveloperJourney />
       </header>
 

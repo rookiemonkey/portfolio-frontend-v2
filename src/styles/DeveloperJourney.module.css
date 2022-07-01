@@ -6,23 +6,12 @@
   width: 100%;
 }
 
-.experiences {
-  min-height: 100vh;
-}
-
 .experiences_item {
   color: var(--gray);
   min-width: 100%;
+  max-width: 100%;
   display: flex;
 }
-
-.experiences_item,
-.experiences_item .left,
-.experiences_item .right {
-  height: 100vh;
-  max-height: 100%;
-}
-
 .experiences_item .left,
 .experiences_item .right {
   width: 50%;
@@ -51,4 +40,11 @@
 
 .experiences_item_header_container h1 {
   color: var(--blue);
+}
+
+.vector-self-study {
+  width: 65%;
+  max-width: 65%;
+  height: auto;
+  transform: translate(-65%, 0);
 }

@@ -5,14 +5,14 @@ import normalizeHeight from '../helpers/normalizeHeight';
 import setStyleVariable from '../helpers/setStyleVariable';
 
 const Contain = props => {
-  const { setCenterScreen } = useContext(CenterScreenContext)
+  const { setCenterScreenOriginEl } = useContext(CenterScreenContext)
   const { pathname } = useLocation()
   const _this = useRef()
 
   useEffect(() =>  {
-    setCenterScreen({ x: _this.current.offsetWidth / 2, y: _this.current.offsetHeight / 2 })
+    setCenterScreenOriginEl(_this)  
     normalizeHeight(_this)
-  }, [setCenterScreen])
+  }, [setCenterScreenOriginEl])
 
   useEffect(() => pathname === '/' ? setStyleVariable('--screen-scroll', 'hidden') : setStyleVariable('--screen-scroll', 'scroll'), [pathname])
 

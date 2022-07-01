@@ -1,6 +1,7 @@
 import React, { useContext, useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { CenterScreenContext } from "../context/CenterScreen";
+import getCenterCoorsByEl from "../helpers/getCenterCoorsByEl";
 
 const variant = {
   visible: { opacity: 1, scale: 1, originX: 'center', originY: 'center' },
@@ -11,13 +12,9 @@ const SVGCartoon = props => {
   const { transitionDelay } = props
   const _this = useRef()
   const [position, setPosition] = useState({ top: 0, left: 0 })
-  const { centerScreen } = useContext(CenterScreenContext)
+  const { centerScreenOriginEl } = useContext(CenterScreenContext)
 
-  useEffect(() => {
-    let top = centerScreen.y - (_this.current.clientHeight/2)
-    let left = centerScreen.x - (_this.current.clientWidth/2)
-    setPosition({ top, left })
-  }, [centerScreen])
+  useEffect(() => setPosition(getCenterCoorsByEl(centerScreenOriginEl, _this)), [centerScreenOriginEl])
 
   return (
     <svg

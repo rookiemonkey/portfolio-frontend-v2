@@ -97,10 +97,10 @@ const Home = () => {
 
         <div className={styles['contents-right']} ref={right}>
 
-          <SVGSplat className={styles['splat1']} transitionDelay={0} />
-          <SVGSplat className={styles['splat2']} transitionDelay={0.25} />
-          <SVGSplat className={styles['splat3']} transitionDelay={0.5} />
-          <SVGCartoon className={styles['cartoon']} transitionDelay={0.6} />
+          <SVGSplat className={`floating-vector ${styles['vector-splat1']}`} transitionDelay={0} />
+          <SVGSplat className={`floating-vector ${styles['vector-splat2']}`} transitionDelay={0.25} />
+          <SVGSplat className={`floating-vector ${styles['vector-splat3']}`} transitionDelay={0.5} />
+          <SVGCartoon className={`floating-vector ${styles['vector-cartoon']}`} transitionDelay={0.6} />
 
         </div>
 

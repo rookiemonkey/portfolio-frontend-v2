@@ -60,3 +60,11 @@ svg {
 .contain-screen::-webkit-scrollbar {
   display: none;
 }
+
+.floating-vector {
+  position: absolute;
+  height: auto;
+  top: 0;
+  left: 0;
+  transform-origin: center;
+}
