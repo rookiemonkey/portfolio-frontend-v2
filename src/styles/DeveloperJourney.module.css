@@ -20,6 +20,12 @@
 }
 
 .experiences_item h1,
+.experiences_item h3,
+.experiences_item p {
+  z-index: 2;
+}
+
+.experiences_item h1,
 .experiences_item h3 {
   font-family: "Don Jose";
   line-height: 47px;
@@ -42,9 +48,20 @@
   color: var(--blue);
 }
 
-.vector-self-study {
-  width: 65%;
-  max-width: 65%;
+.vector-self-study,
+.vector-online-class,
+.vector-working {
+  width: 600px;
+  max-width: 600px;
   height: auto;
-  transform: translate(-65%, 0);
+  z-index: 1;
+}
+
+.vector-self-study,
+.vector-working {
+  transform: translate(-50%, 0);
+}
+
+.vector-online-class {
+  transform: translate(45%, 0);
 }

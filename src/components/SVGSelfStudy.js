@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
 import getCenterCoorsByEl from '../helpers/getCenterCoorsByEl';
-import styles from '../styles/DeveloperJourney.module.css';
 
 const SVGSelfStudy = ({ centerToEl, className }) => {
   const _this = useRef()
