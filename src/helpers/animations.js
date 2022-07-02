@@ -60,6 +60,11 @@ const animateFadeInFromTop = {
 // START premade variants
 
 const remove = {
+  'animate': {
+    transition: {
+      when: "beforeChildren",
+    }
+  },
   'exit': { 
     transition: {
       when: "afterChildren",

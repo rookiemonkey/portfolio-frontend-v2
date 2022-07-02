@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import styles from '../../styles/DeveloperJourney.module.css';
-import ExperienceItemContent from './ExperienceItemContent';
 import SVGSelfStudy from './SVGSelfStudy';
 import SVGOnlineClass from "./SVGOnlineClass";
 import SVGWorking from "./SVGWorking";
@@ -10,37 +9,35 @@ import animationVariants from "./variants/experienceItem";
 
 const ExperienceItem = props => {
   const _this = useRef()
-  const { title, duration, description, key, render_location } = props.data
+  const { title, duration, description, key } = props.data
 
   useEffect(() => normalizeHeight(_this), [])
 
   return (
-    <motion.article
-      variants={animationVariants.remove}
+    <article 
+      variants={animationVariants.experienceItem}
+      initial="initial"
+      animate="animate"
       exit="exit"
-      ref={_this}
-      className={`${styles['experiences_item']} ${styles[`experiences_item_${key}`]} `}>
+      ref={_this} 
+      className={`${styles['experiences_item']} ${styles[`experiences_item_${key}`]} `}
+    >
 
-      <motion.div 
-        variants={animationVariants.experienceItem} 
-        animate="animate"
-        exit="exit"
-        className={styles['left']}>
-        {render_location === 'left' ? <ExperienceItemContent data={{ title, duration, description }} /> : null}
+      <div className={styles['left']}>
         {key === 1 ? <SVGSelfStudy className={`floating-vector ${styles['vector-self-study']}`} centerToEl={_this} /> : null}
-        {key === 3 ? <SVGWorking className={`floating-vector ${styles['vector-working']}`} centerToEl={_this} /> : null}
-      </motion.div>
-
-      <motion.div 
-        variants={animationVariants.experienceItem} 
-        animate="animate"
-        exit="exit" 
-        className={styles['right']}>
-        {render_location === 'right' ? <ExperienceItemContent data={{ title, duration, description }} /> : null}
         {key === 2 ? <SVGOnlineClass className={`floating-vector ${styles['vector-online-class']}`} centerToEl={_this} /> : null}
+        {key === 3 ? <SVGWorking className={`floating-vector ${styles['vector-working']}`} centerToEl={_this} /> : null}
+      </div>
+
+      <motion.div variants={animationVariants.experienceItemTexts} initial="initial" animate="animate" exit="exit" className={styles['right']}>
+        <motion.div variants={animationVariants.fadein} className={styles['experiences_item_header_container']}>
+          <h1>{title}</h1>
+          <h3>{duration}</h3>
+        </motion.div>
+        <motion.p variants={animationVariants.fadein} >{description}</motion.p>
       </motion.div>
 
-    </motion.article>
+    </article>
   )
 }
 

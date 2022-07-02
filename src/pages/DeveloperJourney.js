@@ -43,20 +43,11 @@ const DeveloperJourney = () => {
         <path d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z" />
       </svg>
 
-      <AnimatePresence>
-        {page === 1 ? <Banner /> : null}
-      </AnimatePresence>
-
-      <AnimatePresence>
-        {page === 2 ? <ExperienceItem data={experiences.data[0]} key={0} /> : null}
-      </AnimatePresence>
-
-      <AnimatePresence>
-        {page === 3 ? <ExperienceItem data={experiences.data[1]} key={1} /> : null}
-      </AnimatePresence>
-
-      <AnimatePresence>
-        {page === 4 ? <ExperienceItem data={experiences.data[2]} key={2} /> : null}
+      <AnimatePresence exitBeforeEnter>
+        { page === 1 ? <Banner /> : null }
+        { page === 2 ? <ExperienceItem data={experiences.data[0]} key={0} /> : null }
+        { page === 3 ? <ExperienceItem data={experiences.data[1]} key={1} /> : null }
+        { page === 4 ? <ExperienceItem data={experiences.data[2]} key={2} /> : null }
       </AnimatePresence>
 
       <svg

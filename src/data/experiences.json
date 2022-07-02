@@ -4,22 +4,19 @@
       "key": 1,
       "title": "Where it all began",
       "duration": "May 2020",
-      "description": "I started my studying Web Development journey during the COVID-19 pandemic. I make use of my spare  time watching youtube playlist and following freecodecamp's web developer curriculum. After finishing at least the Responsive Web Design, Javascript Algorithm and Data Structure, I decided to invest some of my savings in purchasing some web development courses on Udemy",
-      "render_location": "right"
+      "description": "I started my studying Web Development journey during the COVID-19 pandemic. I make use of my spare  time watching youtube playlist and following freecodecamp's web developer curriculum. After finishing at least the Responsive Web Design, Javascript Algorithm and Data Structure, I decided to invest some of my savings in purchasing some web development courses on Udemy"
     },
     {
       "key": 2,
       "title": "I Enrolled on a bootcamp",
       "duration": "October 2020 - April 2021",
-      "description": "I enrolled on a YC backed bootcamp named Avion. The first half of the course is definitely a review for me but enrolling in the school allows me to gain tips and tricks from experienced developers whose been in the industry for a long time. We were taught Ruby for the backend development and Ruby on Rails for framework.",
-      "render_location": "left"
+      "description": "I enrolled on a YC backed bootcamp named Avion. The first half of the course is definitely a review for me but enrolling in the school allows me to gain tips and tricks from experienced developers whose been in the industry for a long time. We were taught Ruby for the backend development and Ruby on Rails for framework."
     },
     {
       "key": 3,
       "title": "Shopify Developer",
       "duration": "February 2021 - Present",
-      "description": "While I'm studying with Avion, I was able to get a job offer which is also Avion's goal for their students.",
-      "render_location": "right"
+      "description": "While I'm studying with Avion, I was able to get a job offer which is also Avion's goal for their students."
     }
   ]
 }

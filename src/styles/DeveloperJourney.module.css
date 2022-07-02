@@ -56,15 +56,7 @@
   max-width: 600px;
   height: auto;
   z-index: 1;
-}
-
-.vector-self-study,
-.vector-working {
   transform: translate(-50%, 0);
-}
-
-.vector-online-class {
-  transform: translate(45%, 0);
 }
 
 .vector-arrow-to-left,
