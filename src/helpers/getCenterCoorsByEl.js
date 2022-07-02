@@ -1,9 +1,7 @@
-const getCenterCoorsByEl = (parentElement, elementToCenter ) => {
+const getCenterCoorsByEl = (parentElement, elementToCenter) => {
   if (parentElement) {
-    let { top } = parentElement.current.getBoundingClientRect()
-
     return { 
-      top: (parentElement.current.offsetHeight / 2) - (elementToCenter.current.clientHeight / 2) + top, 
+      top: (parentElement.current.offsetHeight / 2) - (elementToCenter.current.clientHeight / 2), 
       left: (parentElement.current.offsetWidth / 2) - (elementToCenter.current.clientWidth / 2)
     }
   }

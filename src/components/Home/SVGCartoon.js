@@ -1,7 +1,7 @@
 import React, { useContext, useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { CenterScreenContext } from "../context/CenterScreen";
-import getCenterCoorsByEl from "../helpers/getCenterCoorsByEl";
+import { CenterScreenContext } from "../../context/CenterScreen";
+import getCenterCoorsByEl from "../../helpers/getCenterCoorsByEl";
 
 const variant = {
   visible: { opacity: 1, scale: 1, originX: 'center', originY: 'center' },

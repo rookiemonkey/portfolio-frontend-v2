@@ -2,11 +2,11 @@ import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import styles from '../styles/Home.module.css';
-import SVGCartoon from '../components/SVGCartoon';
-import SVGSplat from '../components/SVGSplat';
-import SVGGithubIcon from '../components/SVGGithubIcon';
-import SVGLinkedinIcon from '../components/SVGLinkedinIcon';
-import SVGArrowRight from '../components/SVGArrowRight';
+import SVGCartoon from '../components/Home/SVGCartoon';
+import SVGSplat from '../components/Home/SVGSplat';
+import SVGGithubIcon from '../components/Home/SVGGithubIcon';
+import SVGLinkedinIcon from '../components/Home/SVGLinkedinIcon';
+import SVGArrowRight from '../components/Home/SVGArrowRight';
 import normalizeHeight from '../helpers/normalizeHeight';
 
 const fadeInToRightVariant = {

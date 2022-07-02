@@ -11,11 +11,12 @@
   min-width: 100%;
   max-width: 100%;
   display: flex;
+  padding-top: var(--global-padding-all);
+  padding-bottom: var(--global-padding-all);
 }
 .experiences_item .left,
 .experiences_item .right {
   width: 50%;
-  min-height: 50%;
   max-width: 50%;
 }
 
@@ -64,4 +65,17 @@
 
 .vector-online-class {
   transform: translate(45%, 0);
+}
+
+.vector-arrow-to-left,
+.vector-arrow-to-right {
+  cursor: pointer;
+}
+
+.vector-arrow-to-right {
+  transform: translate(1250%, 0);
+}
+
+.vector-arrow-to-left {
+  transform: translate(-1250%, 0);
 }

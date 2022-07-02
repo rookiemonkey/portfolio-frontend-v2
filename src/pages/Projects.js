@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import styles from '../styles/Projects.module.css';
-import SVGProjects from '../components/SVGProjects';
+import SVGProjects from '../components/Projects/SVGProjects';
 import normalizeHeight from '../helpers/normalizeHeight';
 
 const Projects = () => {
