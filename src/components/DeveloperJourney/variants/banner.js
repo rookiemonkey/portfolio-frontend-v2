@@ -60,6 +60,7 @@ const variants = {
   character,
   letters,
   desktop,
+  remove: variables.variants.remove,
   scaleIn: variables.variants.scaleIn,
   fadeInFromBottom: { ...variables.variants.fadeInFromBottom, exit: variables.initial_exit.hiddenFadeInFromTop }
 }
