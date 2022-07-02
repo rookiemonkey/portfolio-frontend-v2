@@ -24,23 +24,23 @@ const SVGOnlineClass = ({ centerToEl, className }) => {
         animate="animate"
         exit="exit"
       >
-      <motion.g variants={animationVariants.scaleIn} id="freepik--Shadows--inject-5">
-        <path
+      <g id="freepik--Shadows--inject-5">
+        <motion.path variants={animationVariants.scaleIn}
           id="freepik--Shadow--inject-5"
           d="M619.046 677.92C619.373 679.503 620.018 681.004 620.943 682.33C622.794 684.959 625.229 687.123 628.058 688.651C640.361 695.766 660.398 695.766 672.643 688.651C675.468 687.118 677.903 684.955 679.757 682.33C680.672 681 681.312 679.501 681.639 677.92V677.92C682.742 672.584 679.728 667.013 672.628 662.911C660.324 655.796 640.288 655.796 628.043 662.911C620.957 667.013 617.944 672.584 619.046 677.92Z"
           fill="#E0E0E0"
         />
-        <path
+        <motion.path variants={animationVariants.scaleIn}
           id="freepik--shadow--inject-5_2"
           d="M689.548 565.332L440.294 709.319C437.062 710.957 433.489 711.81 429.865 711.81C426.241 711.81 422.668 710.957 419.435 709.319L53.9784 498.33C48.2307 494.993 48.2307 489.613 53.9784 486.276L303.232 342.289C306.464 340.652 310.037 339.798 313.661 339.798C317.285 339.798 320.858 340.652 324.091 342.289L689.548 553.293C695.31 556.615 695.31 562.01 689.548 565.332Z"
           fill="#E0E0E0"
         />
-        <path
+        <motion.path variants={animationVariants.scaleIn}
           id="freepik--shadow--inject-5_3"
           d="M133.388 700.19C104.782 704.027 36.9999 706.511 34.398 668.027C32.7957 645.183 55.3602 628.058 73.3089 627.69C80.3943 627.543 90.2727 628.646 92.9775 637.642C97.3875 652.504 108.545 656.046 120.408 656.855C133.638 657.252 146.618 657.046 159.76 657.987C166.904 658.34 173.298 658.634 178.87 664.028C196.98 686.372 149.793 698 133.388 700.19Z"
           fill="#EBEBEB"
         />
-      </motion.g>
+      </g>
       <motion.g variants={animationVariants.fadeInFromTop} id="freepik--Device--inject-5">
         <g id="freepik--Laptop--inject-5">
           <path

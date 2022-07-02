@@ -1,5 +1,5 @@
-const delay_for_children = .25
-const delay_for_staggered_children = .15
+const delay_for_children = .10
+const delay_for_staggered_children = .10
 
 // START initial & exit
 
