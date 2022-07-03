@@ -1,11 +1,12 @@
 import React, { useState, useRef, useEffect, useContext } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import Banner from '../components/DeveloperJourney/Banner';
 import { CenterScreenContext } from "../context/CenterScreen";
 import getCenterCoorsByEl from "../helpers/getCenterCoorsByEl";
 import ExperienceItem from '../components/DeveloperJourney/ExperienceItem';
 import experiences from '../data/experiences.json';
 import styles from '../styles/DeveloperJourney.module.css'
+import pageVariants from "./variants/pageTransitions";
 
 const DeveloperJourney = () => {
   const MAX_PAGE = 4
@@ -26,7 +27,12 @@ const DeveloperJourney = () => {
   }, [centerScreenOriginEl])
 
   return (
-    <>
+    <motion.div 
+      variants={pageVariants.pageTransition} 
+      initial="initial" 
+      animate="animate" 
+      exit="exit"
+    >
 
       <svg
         onClick={prev}
@@ -64,7 +70,7 @@ const DeveloperJourney = () => {
         <path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z" />
       </svg>
 
-    </>
+    </motion.div>
   )
 }
 

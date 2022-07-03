@@ -1,6 +1,6 @@
 import variables from '../../../helpers/animations';
 
-const vector = {
+const cartoon = {
   'initial': {},
   'animate': {
     transition: {
@@ -64,7 +64,7 @@ const fillHair = {
 }
 
 const variants = {
-  vector,
+  cartoon,
   fillGray,
   fillBlue,
   fillHair,

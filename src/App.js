@@ -1,31 +1,25 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CenterScreenContextProvider } from './context/CenterScreen';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Backdrop from './hocs/Backdrop';
 import Gradient from './hocs/Gradient';
 import Contain from './hocs/Contain';
-import Home from './pages/Home';
-import DeveloperJourney from './pages/DeveloperJourney';
-import Projects from './pages/Projects';
+import AnimatedRoutes from './AnimatedRoutes';
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <CenterScreenContextProvider>
-        <Backdrop>
-          <Gradient>
-            <Contain>
+    <CenterScreenContextProvider>
+      <Backdrop>
+        <Gradient>
+          <Contain>
 
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/developer-journey" element={<DeveloperJourney />} />
-              </Routes>
+            <Router>
+              <AnimatedRoutes />
+            </Router>
 
-            </Contain>
-          </Gradient>
-        </Backdrop>
-      </CenterScreenContextProvider>
-    </Router>
+          </Contain>
+        </Gradient>
+      </Backdrop>
+    </CenterScreenContextProvider>
   );
 }
 

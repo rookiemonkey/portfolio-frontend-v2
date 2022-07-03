@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import styles from '../styles/Home.module.css';
 import Content from '../components/Home/Content';
 import SVGCartoon from '../components/Home/SVGCartoon';
+import pageVariants from "./variants/pageTransitions";
 import cartoonVariants from "../components/Home/variants/cartoon";
 import contentVariants from "../components/Home/variants/content";
 import normalizeHeight from '../helpers/normalizeHeight';
@@ -15,7 +16,14 @@ const Home = () => {
   useEffect(() => [contents, left, right].forEach(normalizeHeight), [])
   
   return (
-    <div className={styles['contents']} ref={contents}>
+    <motion.div 
+      variants={pageVariants.pageTransition} 
+      initial="initial" 
+      animate="animate" 
+      exit="exit" 
+      className={styles['contents']} 
+      ref={contents}
+    >
 
       <motion.div 
         variants={contentVariants.content}
@@ -27,7 +35,7 @@ const Home = () => {
       </motion.div>
 
       <motion.div 
-        variants={cartoonVariants.vector}
+        variants={cartoonVariants.cartoon}
         initial="initial"
         animate="animate"
         exit="exit"
@@ -35,7 +43,7 @@ const Home = () => {
         <SVGCartoon />
       </motion.div>
 
-    </div>
+    </motion.div>
   )
 }
 
