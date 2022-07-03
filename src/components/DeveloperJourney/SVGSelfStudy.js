@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import animationVariants from "./variants/selfStudy";
 import getCenterCoorsByEl from '../../helpers/getCenterCoorsByEl';
+import styles from '../../styles/DeveloperJourney.module.css';
 
 const SVGSelfStudy = ({ centerToEl, className }) => {
   const _this = useRef()
@@ -13,7 +14,7 @@ const SVGSelfStudy = ({ centerToEl, className }) => {
     <svg 
       ref={_this}
       style={{ top: `${position.top}px`, left: `${position.left}px` }}
-      className={className}
+      className={`floating-vector ${styles['vector-self-study']}`}
       xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
       <motion.g
         variants={animationVariants.vector}

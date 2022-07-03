@@ -20,13 +20,13 @@ const ExperienceItem = props => {
       animate="animate"
       exit="exit"
       ref={_this} 
-      className={`${styles['experiences_item']} ${styles[`experiences_item_${key}`]} `}
+      className={`${styles['experiences_item']}`}
     >
 
       <div className={styles['left']}>
-        {key === 1 ? <SVGSelfStudy className={`floating-vector ${styles['vector-self-study']}`} centerToEl={_this} /> : null}
-        {key === 2 ? <SVGOnlineClass className={`floating-vector ${styles['vector-online-class']}`} centerToEl={_this} /> : null}
-        {key === 3 ? <SVGWorking className={`floating-vector ${styles['vector-working']}`} centerToEl={_this} /> : null}
+        {key === 1 ? <SVGSelfStudy centerToEl={_this} /> : null}
+        {key === 2 ? <SVGOnlineClass centerToEl={_this} /> : null}
+        {key === 3 ? <SVGWorking centerToEl={_this} /> : null}
       </div>
 
       <motion.div variants={animationVariants.experienceItemTexts} initial="initial" animate="animate" exit="exit" className={styles['right']}>

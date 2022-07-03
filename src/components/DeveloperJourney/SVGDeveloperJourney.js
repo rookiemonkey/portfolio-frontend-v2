@@ -5,9 +5,15 @@ import animationVariants from "./variants/banner";
 const SVGDeveloperJourney = () => {
 
   return (
-    <svg width="1010" height="739" viewBox="0 0 1010 739" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg 
+      width="1010" 
+      height="739" 
+      viewBox="0 0 1010 739" 
+      fill="none" 
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <g id="Header">
-        <motion.g variants={animationVariants.desktop} initial="initial" animate="animate" exit="exit" id="Desktop" clipPath="url(#clip0_41_182)">
+        <motion.g variants={animationVariants.desktop} initial="initial" animate="animate" exit="exit" id="Desktop" >
           <motion.g variants={animationVariants.scaleIn} id="floor">
             <path id="freepik--floor--inject-3" d="M676.85 738.898C504.62 738.898 365 662.687 365 568.676C365 474.666 504.62 398.455 676.85 398.455C849.079 398.455 988.699 474.666 988.699 568.676C988.699 662.687 849.079 738.898 676.85 738.898Z" fill="#FAFAFA" />
           </motion.g>
@@ -584,11 +590,6 @@ const SVGDeveloperJourney = () => {
           </motion.g>
         </motion.g>
       </g>
-      <defs>
-        <clipPath id="clip0_41_182">
-          <rect width="781.695" height="739" fill="white" transform="matrix(-1 0 0 1 1009.7 0)" />
-        </clipPath>
-      </defs>
     </svg>
   )
 }

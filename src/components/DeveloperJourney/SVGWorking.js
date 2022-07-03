@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react"
 import { motion } from "framer-motion";
 import getCenterCoorsByEl from '../../helpers/getCenterCoorsByEl';
 import animationVariants from './variants/working';
+import styles from '../../styles/DeveloperJourney.module.css';
 
 const SVGWorking = ({ centerToEl, className }) => {
   const _this = useRef()
@@ -13,7 +14,7 @@ const SVGWorking = ({ centerToEl, className }) => {
     <svg
       ref={_this}
       style={{ top: `${position.top}px`, left: `${position.left}px` }}
-      className={className}
+      className={`floating-vector ${styles['vector-working']}`}
       viewBox="0 0 688 735"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
