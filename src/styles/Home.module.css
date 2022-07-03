@@ -45,9 +45,13 @@
   margin-top: 1%;
 }
 
+.icons > a {
+  display: inline-block;
+  margin-right: 2.5%;
+}
+
 .icons svg {
   fill: var(--blue);
-  margin-right: 2.5%;
 }
 
 .navigation-container,
@@ -78,30 +82,8 @@
   font-weight: 700;
 }
 
-.vector-splat1,
-.vector-splat2,
-.vector-splat3 {
-  width: 400px;
-  z-index: -1;
-  opacity: 0.25;
-}
-
 .vector-cartoon {
-  width: 450px;
-  transform: translate(60%, 0);
-}
-
-.vector-splat1 {
-  fill: var(--blue-lighter);
-  transform: translate(50%, -25%);
-}
-
-.vector-splat2 {
-  fill: var(--gray);
-  transform: translate(100%, 0%) rotate(90deg);
-}
-
-.vector-splat3 {
-  fill: var(--blue);
-  transform: translate(50%, 30%) rotate(190deg);
+  width: 750px;
+  height: auto;
+  transform: translate(30%, 0);
 }
