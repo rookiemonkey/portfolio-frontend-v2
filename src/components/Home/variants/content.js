@@ -20,7 +20,9 @@ const content = {
 
 const variants = {
   content,
-  fadeInFromLeft: variables.variants.fadeInFromLeft
+  fadeInFromTop: variables.variants.fadeInFromTop,
+  fadeInFromLeft: variables.variants.fadeInFromLeft,
+  fadeInFromBottom: variables.variants.fadeInFromBottom
 }
 
 export default variants;
