@@ -13,7 +13,6 @@ const pageTransition = {
     }
   },
   'exit': {
-    ...variables.initial_exit.hiddenFadeIn,
     transition: {
       when: "afterChildren",
       staggerChildren: variables.values.delay_for_staggered_children,

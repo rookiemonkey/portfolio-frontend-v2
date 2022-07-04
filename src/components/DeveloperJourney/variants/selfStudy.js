@@ -1,11 +1,8 @@
 import variables from '../../../helpers/animations';
 
 const vector = {
-  'initial': {
-    ...variables.initial_exit.hiddenFadeIn
-  },
+  'initial': {},
   'animate': {
-    ...variables.animate.animateFadeIn,
     transition: {
       when: "beforeChildren",
       delayChildren: variables.values.delay_for_children,
@@ -13,7 +10,6 @@ const vector = {
     }
   },
   'exit': {
-    ...variables.initial_exit.hiddenFadeIn,
     transition: {
       when: "afterChildren",
       staggerChildren: variables.values.delay_for_staggered_children,
