@@ -14,7 +14,7 @@ const ExperienceItem = props => {
   useEffect(() => normalizeHeight(_this), [])
 
   return (
-    <article 
+    <motion.article 
       variants={animationVariants.experienceItem}
       initial="initial"
       animate="animate"
@@ -37,7 +37,7 @@ const ExperienceItem = props => {
         <motion.p variants={animationVariants.fadein} >{description}</motion.p>
       </motion.div>
 
-    </article>
+    </motion.article>
   )
 }
 

@@ -122,7 +122,7 @@ const SVGOnlineClass = ({ centerToEl, className }) => {
           />
         </g>
       </motion.g>
-        <motion.g variants={animationVariants.scaleIn} i id="freepik--Plant--inject-5">
+        <motion.g variants={animationVariants.scaleIn} id="freepik--Plant--inject-5">
         <g id="freepik--plant--inject-5">
           <g id="freepik--pot--inject-5">
             <path
@@ -239,7 +239,7 @@ const SVGOnlineClass = ({ centerToEl, className }) => {
           />
         </g>
       </motion.g>
-        <motion.g variants={animationVariants.fadeInFromTop} i id="freepik--Chat--inject-5">
+        <motion.g variants={animationVariants.fadeInFromTop} id="freepik--Chat--inject-5">
         <g id="freepik--chat--inject-5">
           <g id="freepik--shadow--inject-5_4" opacity={0.2}>
             <path
@@ -443,7 +443,7 @@ const SVGOnlineClass = ({ centerToEl, className }) => {
           />
         </g>
       </motion.g>
-        <motion.g variants={animationVariants.fadeInFromTop} i id="freepik--video-controls--inject-5">
+        <motion.g variants={animationVariants.fadeInFromTop} id="freepik--video-controls--inject-5">
         <g id="freepik--video-bar--inject-5">
           <g id="freepik--window--inject-5_3">
             <path
@@ -539,7 +539,7 @@ const SVGOnlineClass = ({ centerToEl, className }) => {
           />
         </g>
       </motion.g>
-        <motion.g variants={animationVariants.fadeInFromTop} i id="freepik--character-5--inject-5">
+        <motion.g variants={animationVariants.fadeInFromTop} id="freepik--character-5--inject-5">
         <g id="freepik--Character--inject-5">
           <g id="freepik--character--inject-5">
             <g id="freepik--Bottom--inject-5">
@@ -718,7 +718,7 @@ const SVGOnlineClass = ({ centerToEl, className }) => {
           </g>
         </g>
       </motion.g>
-        <motion.g variants={animationVariants.fadeInFromTop} i id="freepik--character-4--inject-5">
+        <motion.g variants={animationVariants.fadeInFromTop} id="freepik--character-4--inject-5">
         <g id="freepik--videocall-window--inject-5">
           <g id="freepik--window--inject-5_4">
             <g id="freepik--shadow--inject-5_5" opacity={0.2}>
@@ -993,7 +993,7 @@ const SVGOnlineClass = ({ centerToEl, className }) => {
           </g>
         </g>
       </motion.g>
-        <motion.g variants={animationVariants.fadeInFromTop} i id="freepik--character-3--inject-5">
+        <motion.g variants={animationVariants.fadeInFromTop} id="freepik--character-3--inject-5">
         <g id="freepik--videocall-window--inject-5_2">
           <g id="freepik--window--inject-5_6">
             <g id="freepik--shadow--inject-5_6" opacity={0.2}>
@@ -1256,7 +1256,7 @@ const SVGOnlineClass = ({ centerToEl, className }) => {
           </g>
         </g>
       </motion.g>
-        <motion.g variants={animationVariants.fadeInFromTop} i id="freepik--character-2--inject-5">
+        <motion.g variants={animationVariants.fadeInFromTop} id="freepik--character-2--inject-5">
         <g id="freepik--videocall-window--inject-5_3">
           <g id="freepik--window--inject-5_7">
             <g id="freepik--shadow--inject-5_7" opacity={0.2}>
@@ -1510,7 +1510,7 @@ const SVGOnlineClass = ({ centerToEl, className }) => {
           </g>
         </g>
       </motion.g>
-        <motion.g variants={animationVariants.fadeInFromTop} i id="freepik--character-1--inject-5">
+        <motion.g variants={animationVariants.fadeInFromTop} id="freepik--character-1--inject-5">
         <g id="freepik--videocall-window--inject-5_4">
           <g id="freepik--window--inject-5_9">
             <g id="freepik--shadow--inject-5_8" opacity={0.2}>

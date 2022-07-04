@@ -11,7 +11,7 @@ const Banner = () => {
   useEffect(() => normalizeHeight(_this), [])
 
   return (
-    <motion.header exit={animationVariants.remove} ref={_this} className={styles['header']} >
+    <motion.header variants={animationVariants.remove} exit="exit" ref={_this} className={styles['header']} >
       <SVGDeveloperJourney />
     </motion.header>
   )
