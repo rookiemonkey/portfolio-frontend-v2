@@ -37,7 +37,7 @@ const Content = () => {
             <svg width={30} height={30} viewBox="0 0 25 25">
               <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
             </svg>
-            <span>Development Tools</span>
+            <span>Developer Tools</span>
           </Link>
         </motion.div>
 
