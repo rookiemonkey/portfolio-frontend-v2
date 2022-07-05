@@ -1,0 +1,38 @@
+{
+  "frontend": [
+    "HTML",
+    "CSS",
+    "Javascript",
+    "JQuery",
+    "SASS",
+    "MaterialUI",
+    "SemanticUI",
+    "Bootstrap",
+    "Redux",
+    "React",
+    "SEO"
+  ],
+  "backend": [
+    "NodeJS",
+    "Express",
+    "PHP",
+    "Ruby",
+    "Ruby on Rails",
+    "GraphQL",
+    "NextJS"
+  ],
+  "database": [
+    "Postgres",
+    "MySQL",
+    "MongoDB"
+  ],
+  "development": [
+    "Docker",
+    "Postman",
+    "Terminal",
+    "Pentesting",
+    "Git",
+    "NPM",
+    "Yarn"
+  ]
+}
