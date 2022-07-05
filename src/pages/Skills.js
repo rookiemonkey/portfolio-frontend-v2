@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
-import styles from '../styles/Projects.module.css';
-import Content from '../components/Projects/Content';
+import styles from '../styles/Skills.module.css';
+import Content from '../components/Skills/Content';
 import normalizeHeight from '../helpers/normalizeHeight';
 
 const Projects = () => {
