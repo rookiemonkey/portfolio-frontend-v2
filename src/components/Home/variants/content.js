@@ -1,4 +1,4 @@
-import variables from '../../../helpers/animations';
+import variables from '~/helpers/animations';
 
 const content = {
   'initial': {},

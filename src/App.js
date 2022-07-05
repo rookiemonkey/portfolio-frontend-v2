@@ -1,9 +1,9 @@
-import { CenterScreenContextProvider } from './context/CenterScreen';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Backdrop from './hocs/Backdrop';
-import Gradient from './hocs/Gradient';
-import Contain from './hocs/Contain';
-import AnimatedRoutes from './AnimatedRoutes';
+import { CenterScreenContextProvider } from '~/context/CenterScreen';
+import Backdrop from '~/hocs/Backdrop';
+import Gradient from '~/hocs/Gradient';
+import Contain from '~/hocs/Contain';
+import AnimatedRoutes from '~/AnimatedRoutes';
 
 const App = () => {
   return (

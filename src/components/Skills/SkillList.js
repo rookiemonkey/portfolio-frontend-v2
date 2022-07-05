@@ -1,5 +1,5 @@
 import React from "react";
-import SkillListItem from "./SkillListItem";
+import SkillListItem from "~/components/Skills/SkillListItem";
 
 const SkillList = ({ title, skills }) => {
   return (

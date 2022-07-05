@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion';
-import styles from '../styles/Home.module.css';
-import Content from '../components/Home/Content';
-import SVGCartoon from '../components/Home/SVGCartoon';
-import pageVariants from "./variants/pageTransitions";
-import cartoonVariants from "../components/Home/variants/cartoon";
-import contentVariants from "../components/Home/variants/content";
-import normalizeHeight from '../helpers/normalizeHeight';
+import styles from '~/styles/Home.module.css';
+import Content from '~/components/Home/Content';
+import SVGCartoon from '~/components/Home/SVGCartoon';
+import cartoonVariants from "~/components/Home/variants/cartoon";
+import contentVariants from "~/components/Home/variants/content";
+import pageVariants from "~/pages/variants/pageTransitions";
+import normalizeHeight from '~/helpers/normalizeHeight';
 
 const Home = () => {
   const contents = useRef();

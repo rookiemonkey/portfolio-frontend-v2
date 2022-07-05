@@ -1,6 +1,6 @@
 import React from "react";
-import data from '../../data/skills.json';
-import SkillList from "./SkillList";
+import data from '~/data/skills.json';
+import SkillList from "~/components/Skills/SkillList";
 
 const Content = () => {
   

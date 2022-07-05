@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import animationVariants from "./variants/content";
-import styles from "../../styles/Home.module.css";
+import animationVariants from "~/components/Home/variants/content";
+import styles from "~/styles/Home.module.css";
 
 const Content = () => {
 

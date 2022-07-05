@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from '../styles/Components.module.css'
+import styles from '~/styles/Components.module.css'
 
 const FloatingNavigation = () => (
   <nav className={styles['floating-navigation']}>

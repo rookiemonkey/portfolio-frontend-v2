@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from 'react';
-import globalStyles from '../styles/Components.module.css';
-import FloatingNavigation from '../components/FloatingNavigation';
-import Content from '../components/Skills/Content';
-import normalizeHeight from '../helpers/normalizeHeight';
+import globalStyles from '~/styles/Components.module.css';
+import FloatingNavigation from '~/components/FloatingNavigation';
+import Content from '~/components/Skills/Content';
+import normalizeHeight from '~/helpers/normalizeHeight';
 
 const Projects = () => {
   const _this = useRef()

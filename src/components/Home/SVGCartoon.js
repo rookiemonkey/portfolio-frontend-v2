@@ -1,9 +1,9 @@
 import React, { useContext, useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { CenterScreenContext } from "../../context/CenterScreen";
-import getCenterCoorsByEl from "../../helpers/getCenterCoorsByEl";
-import animationVariants from "./variants/cartoon";
-import styles from "../../styles/Home.module.css";
+import { CenterScreenContext } from "~/context/CenterScreen";
+import getCenterCoorsByEl from "~/helpers/getCenterCoorsByEl";
+import animationVariants from "~/components/Home/variants/cartoon";
+import styles from "~/styles/Home.module.css";
 
 const SVGCartoon = () => {
   const _this = useRef()

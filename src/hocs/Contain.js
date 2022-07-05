@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useContext } from 'react';
-import { CenterScreenContext } from "../context/CenterScreen";
-import normalizeHeight from '../helpers/normalizeHeight';
+import { CenterScreenContext } from "~/context/CenterScreen";
+import normalizeHeight from '~/helpers/normalizeHeight';
 
 const Contain = props => {
   const { setCenterScreenOriginEl } = useContext(CenterScreenContext)

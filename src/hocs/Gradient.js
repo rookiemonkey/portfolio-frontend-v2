@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import normalizeWidth from '../helpers/normalizeWidth';
+import normalizeWidth from '~/helpers/normalizeWidth';
 
 const Gradient = props => {
   const _this = useRef()
