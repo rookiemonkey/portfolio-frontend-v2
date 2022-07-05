@@ -2,6 +2,13 @@
   padding-top: var(--global-padding-all);
 }
 
+.section {
+  display: flex;
+  padding: var(--global-padding-sides);
+  width: 100%;
+  color: var(--gray);
+}
+
 .floating-navigation {
   width: 100%;
   max-height: 50px;

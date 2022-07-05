@@ -1,7 +1,4 @@
-.section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: var(--global-padding-sides);
-  width: 100%;
+.skilllist-item img {
+  width: 50px;
+  height: auto;
 }

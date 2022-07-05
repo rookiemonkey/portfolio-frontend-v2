@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import globalStyles from '../styles/Components.module.css';
-import styles from '../styles/Projects.module.css';
 import FloatingNavigation from '../components/FloatingNavigation';
 import Content from '../components/Projects/Content';
 import normalizeHeight from '../helpers/normalizeHeight';
@@ -15,7 +14,7 @@ const Projects = () => {
 
       <FloatingNavigation />
 
-      <section ref={_this} className={styles['section']} >
+      <section ref={_this} className={globalStyles['section']} >
         <Content />
       </section>
 
