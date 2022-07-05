@@ -1,5 +1,7 @@
 import React, { useRef, useEffect } from 'react';
+import globalStyles from '../styles/Components.module.css';
 import styles from '../styles/Projects.module.css';
+import FloatingNavigation from '../components/FloatingNavigation';
 import Content from '../components/Projects/Content';
 import normalizeHeight from '../helpers/normalizeHeight';
 
@@ -9,13 +11,15 @@ const Projects = () => {
   useEffect(() => normalizeHeight(_this), [])
 
   return (
-    <React.Fragment>
+    <div className={globalStyles['page-container']}>
 
-      <header ref={_this} className={styles['header']} >
+      <FloatingNavigation />
+
+      <section ref={_this} className={styles['section']} >
         <Content />
-      </header>
+      </section>
 
-    </React.Fragment>
+    </div>
   )
 }
 
