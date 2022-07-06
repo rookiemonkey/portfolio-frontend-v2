@@ -1,7 +1,7 @@
 import variables from '~/helpers/animations';
 
 const variants = {
-  fadeInFromRight: variables.variants.fadeInFromRight
+  fadeInFromBottom: variables.variants.fadeInFromBottom
 }
 
 export default variants;

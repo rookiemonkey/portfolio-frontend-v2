@@ -7,6 +7,19 @@
   margin-bottom: 5%;
 }
 
+.skilllist-container h1,
+.skilllist-container h1 span {
+  font-size: 2rem;
+}
+
+.skilllist-container h1 {
+  overflow: hidden;
+}
+
+.skilllist-container h1 span {
+  display: inline-block;
+}
+
 .skilllist-container,
 .skilllist,
 .skilllist-item,
@@ -24,6 +37,7 @@
 .skilllist {
   flex-direction: row;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .skilllist-item {
