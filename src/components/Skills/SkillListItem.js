@@ -6,7 +6,7 @@ import styles from '~/styles/Skills.module.css';
 const SkillListItem = ({ skill }) => (
   <motion.li 
     className={styles['skilllist-item']}
-    variants={animationVariants.fadeInFromBottom}
+    variants={animationVariants.scaleIn}
   >
     <div className={styles['skilllist-item-img-container']}>
       <img src={require(`~/assets/images/${skill.toLowerCase()}.png`)} alt={skill} />
