@@ -17,6 +17,11 @@ const hiddenFadeInFromLeft = {
   x: -99
 }
 
+const hiddenFadeInFromRight = {
+  opacity: 0,
+  x: 99
+}
+
 const hiddenFadeInFromBottom = {
   opacity: 0,
   y: 99
@@ -41,6 +46,11 @@ const animateFadeIn = {
 }
 
 const animateFadeInFromLeft = {
+  opacity: 1,
+  x: 0
+}
+
+const animateFadeInFromRight = {
   opacity: 1,
   x: 0
 }
@@ -90,6 +100,12 @@ const fadeInFromLeft = {
   'exit': { ...hiddenFadeInFromLeft }
 }
 
+const fadeInFromRight = {
+  'initial': { ...hiddenFadeInFromRight },
+  'animate': { ...animateFadeInFromRight },
+  'exit': { ...hiddenFadeInFromRight }
+}
+
 const fadeInFromBottom = {
   'initial': { ...hiddenFadeInFromBottom },
   'animate': { ...animateFadeInFromBottom },
@@ -109,6 +125,7 @@ const variables = {
     hiddenScaleIn,
     hiddenFadeIn,
     hiddenFadeInFromLeft,
+    hiddenFadeInFromRight,
     hiddenFadeInFromBottom,
     hiddenFadeInFromTop
   },
@@ -116,6 +133,7 @@ const variables = {
     animateScaleIn,
     animateFadeIn,
     animateFadeInFromLeft,
+    animateFadeInFromRight,
     animateFadeInFromBottom,
     animateFadeInFromTop
   },
@@ -124,6 +142,7 @@ const variables = {
     scaleIn,
     fadeIn,
     fadeInFromLeft,
+    fadeInFromRight,
     fadeInFromBottom,
     fadeInFromTop
   },
