@@ -42,17 +42,20 @@ svg {
   width: 100vw;
 }
 
-.gradient {
-  background: linear-gradient(113.96deg, #000000 0%, #1F2833 49.48%, #000000 100%);
+.gradient,
+.contain-screen {
+  position: relative;
   margin: 0 auto 0 auto;
 }
 
+.gradient {
+  background: linear-gradient(113.96deg, #000000 0%, #1F2833 49.48%, #000000 100%);
+}
+
 .contain-screen {
-  position: relative;
   z-index: 0;
   width: 100vw;
   max-width: 1200px;
-  margin: 0 auto 0 auto;
 }
 
 .contain-screen::-webkit-scrollbar {
