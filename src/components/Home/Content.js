@@ -24,7 +24,7 @@ const Content = () => {
 
       <div className={styles['navigation-container']}>
         <motion.div variants={animationVariants.fadeInFromLeft}>
-          <Link to='/development-tools' className={styles['navigation-container-link']}>
+          <Link to='/skills' className={styles['navigation-container-link']}>
             <svg width={30} height={30} viewBox="0 0 25 25">
               <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
             </svg>
