@@ -1,3 +1,43 @@
+.section {
+  flex-direction: column;
+}
+
+.skilllist-container {
+  min-width: 100%;
+  margin-bottom: 5%;
+}
+
+.skilllist-container,
+.skilllist,
+.skilllist-item,
+.skilllist-item-img-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.skilllist-item,
+.skilllist-item-img-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.skilllist {
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.skilllist-item {
+  min-width: 120px;
+  max-width: 120px;
+  min-height: 120px;
+  max-height: 120px;
+}
+
+.skilllist-item-img-container {
+  width: 100%;
+  min-height: 85px;
+}
+
 .skilllist-item img {
   width: 50px;
   height: auto;

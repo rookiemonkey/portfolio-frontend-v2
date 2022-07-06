@@ -1,13 +1,14 @@
 import React from "react";
 import SkillListItem from "~/components/Skills/SkillListItem";
+import styles from '~/styles/Skills.module.css';
 
 const SkillList = ({ title, skills }) => {
   return (
-    <article>
+    <article className={styles['skilllist-container']}>
       <h1>{ title }</h1>
       
-      <ul>
-        { skills.map(skill => <SkillListItem skill={skill} />) }
+      <ul className={styles['skilllist']}>
+        {skills.map(skill => <SkillListItem key={skill} skill={skill} />) }
       </ul>
     </article>
   )
