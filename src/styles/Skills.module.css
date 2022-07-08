@@ -1,15 +1,13 @@
-.section {
-  flex-direction: column;
+.left,
+.right {
+  width: 50%;
 }
 
 .skilllist-container {
   min-width: 100%;
-  margin-bottom: 5%;
-}
-
-.skilllist-container h1,
-.skilllist-container h1 span {
-  font-size: 2rem;
+  margin-bottom: 2.5%;
+  padding: var(--global-padding-all-smaller);
+  background-color: var(--backdrop-light);
 }
 
 .skilllist-container h1 {
@@ -41,18 +39,17 @@
 }
 
 .skilllist-item {
-  min-width: 120px;
-  max-width: 120px;
-  min-height: 120px;
-  max-height: 120px;
+  min-width: 80px;
+  max-width: 80px;
+  min-height: 65px;
+  max-height: 65px;
 }
 
 .skilllist-item-img-container {
   width: 100%;
-  min-height: 85px;
 }
 
 .skilllist-item img {
-  width: 50px;
+  width: 40px;
   height: auto;
 }

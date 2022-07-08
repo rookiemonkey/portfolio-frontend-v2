@@ -11,7 +11,6 @@ const SkillListItem = ({ skill }) => (
     <div className={styles['skilllist-item-img-container']}>
       <img src={require(`~/assets/images/${skill.toLowerCase()}.png`)} alt={skill} />
     </div>
-    <span>{skill}</span>
   </motion.li>
 )
 

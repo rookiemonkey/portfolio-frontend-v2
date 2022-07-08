@@ -42,14 +42,10 @@ svg {
   width: 100vw;
 }
 
-.gradient,
+.window,
 .contain-screen {
   position: relative;
   margin: 0 auto 0 auto;
-}
-
-.gradient {
-  background: linear-gradient(113.96deg, #000000 0%, #1F2833 49.48%, #000000 100%);
 }
 
 .contain-screen {

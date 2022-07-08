@@ -22,7 +22,7 @@ const AnimatedLetters = ({ string }) => {
   return (
     <>
     {
-      [...string].map(char => <motion.span variants={animatedLetterVariant}>{char}</motion.span>)
+        [...string].map((char, ind) => <motion.span variants={animatedLetterVariant} key={`${char}-${ind}`}>{char}</motion.span>)
     }
     </>
   )
