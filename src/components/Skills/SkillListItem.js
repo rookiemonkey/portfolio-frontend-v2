@@ -1,17 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
-import animationVariants from "~/components/Skills/variants/skillListItem";
 import styles from '~/styles/Skills.module.css';
 
-const SkillListItem = ({ skill }) => (
-  <motion.li 
-    className={styles['skilllist-item']}
-    variants={animationVariants.scaleIn}
-  >
+const SkillListItem = ({ skill, delay }) => (
+  <li className={styles['skilllist-item']}>
     <div className={styles['skilllist-item-img-container']}>
-      <img src={require(`~/assets/images/${skill.toLowerCase()}.png`)} alt={skill} />
+      <motion.img 
+        whileHover={{
+          scale: 1.25,
+          rotate: 360,
+          transition: { duration: 0.25 },
+        }} 
+        src={require(`~/assets/images/${skill.toLowerCase()}.png`)} 
+        alt={skill} 
+      />
     </div>
-  </motion.li>
+  </li>
 )
 
 export default SkillListItem;

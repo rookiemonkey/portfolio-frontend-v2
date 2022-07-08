@@ -6,7 +6,10 @@ import styles from '~/styles/Skills.module.css';
 
 const SkillList = ({ title, skills }) => {
   return (
-    <article className={styles['skilllist-container']}>
+    <motion.article 
+      variants={animationVariants.listContainer}
+      className={styles['skilllist-container']}
+    >
       <h1>{ title }</h1>
       
       <motion.ul 
@@ -16,9 +19,9 @@ const SkillList = ({ title, skills }) => {
         animate="animate"
         exit="exit"
       >
-        {skills.map(skill => <SkillListItem key={skill} skill={skill} />) }
+        {skills.map((skill, index) => <SkillListItem key={skill} skill={skill} delay={index} />) }
       </motion.ul>
-    </article>
+    </motion.article>
   )
 }
 
