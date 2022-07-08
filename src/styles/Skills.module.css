@@ -1,6 +1,7 @@
 .left,
 .right {
   width: 50%;
+  padding: var(--global-padding-sides-smaller);
 }
 
 .skilllist-container {
@@ -8,10 +9,13 @@
   margin-bottom: 2.5%;
   padding: var(--global-padding-all-smaller);
   background-color: var(--backdrop-light);
+  border-radius: var(--global-border-raidius);
 }
 
 .skilllist-container h1 {
+  text-align: right;
   overflow: hidden;
+  margin-right: 2.5%;
 }
 
 .skilllist-container h1 span {
@@ -33,14 +37,15 @@
 }
 
 .skilllist {
+  justify-content: flex-end;
   flex-direction: row;
   list-style-type: none;
   flex-wrap: wrap;
 }
 
 .skilllist-item {
-  min-width: 80px;
-  max-width: 80px;
+  min-width: 65px;
+  max-width: 65px;
   min-height: 65px;
   max-height: 65px;
 }

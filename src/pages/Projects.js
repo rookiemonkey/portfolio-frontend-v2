@@ -9,14 +9,10 @@ const Projects = () => {
   useEffect(() => normalizeHeight(_this), [])
 
   return (
-    <div className={globalStyles['page-container']}>
-
-      <section ref={_this} className={globalStyles['section']} >
-        <Content />
-      </section>
-
-    </div>
+    <section ref={_this} className={globalStyles['section']} >
+      <Content />
+    </section>
   )
 }
 
-export default Projects
+export default Projects;

@@ -1,9 +1,6 @@
-.page-container {
-  padding-top: var(--global-padding-all);
-}
-
 .section {
   display: flex;
+  align-items: center;
   padding: var(--global-padding-sides);
   width: 100%;
   color: var(--gray);

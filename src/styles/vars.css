@@ -1,7 +1,7 @@
 :root {
   /* COLORS */
   --backdrop: hsl(210, 6%, 9%);
-  --backdrop-light: hsl(210, 6%, 19%);
+  --backdrop-light: hsl(210, 6%, 14%);
   --gray: rgb(198, 199, 200);
   --gray-lighter: rgb(224, 224, 225);
   --gray-lightest: rgb(250, 250, 250);

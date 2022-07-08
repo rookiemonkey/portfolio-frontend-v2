@@ -36,6 +36,22 @@ svg {
   overflow: visible;
 }
 
+h2 {
+  font-family: "Don Jose";
+  color: var(--blue);
+  font-size: 5rem;
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  color: var(--blue);
+  font-style: italic;
+  text-decoration: none;
+}
+
 .backdrop {
   background-color: var(--for-backdrop);
   min-height: 100vh;
