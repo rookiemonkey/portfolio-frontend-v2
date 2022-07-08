@@ -36,10 +36,13 @@ svg {
   overflow: visible;
 }
 
-h2 {
+h2,
+h2 span {
+  display: inline-block;
   font-family: "Don Jose";
   color: var(--blue);
   font-size: 5rem;
+  overflow: hidden;
 }
 
 p {

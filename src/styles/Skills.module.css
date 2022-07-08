@@ -4,6 +4,10 @@
   padding: var(--global-padding-sides-smaller);
 }
 
+.left h2 {
+  max-height: 8rem;
+}
+
 .skilllist-container {
   min-width: 100%;
   margin-bottom: 2.5%;
