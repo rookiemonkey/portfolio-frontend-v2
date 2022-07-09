@@ -78,11 +78,19 @@
   transform: translate(30%, 0);
 }
 
-.contact-container>a {
+.contact-container > a {
   display: inline-block;
   margin-right: 2.5%;
 }
 
-.contact-container svg {
+.contact-container a:hover >svg {
   fill: var(--blue);
+  filter: drop-shadow(0px 0px 10px var(--blue));
+  -webkit-filter: drop-shadow(0px 0px 10px var(--blue));
+}
+
+.contact-container svg {
+  fill: var(--backdrop-lighter);
+  transition: all 250ms ease-in-out;
+  
 }

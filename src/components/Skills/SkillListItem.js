@@ -1,14 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Tooltip from '~/components/Tooltip';
+import animations from '~/helpers/animations';
 import styles from '~/styles/Skills.module.css';
 
 const SkillListItem = ({ skill }) => (
-  <motion.li whileHover={{
-      scale: 1.25,
-      rotate: 360,
-      transition: { duration: 0.25 },
-    }} 
+  <motion.li 
+    whileHover={animations.hover.scaleAndRotate} 
     className={styles['skilllist-item']}
   >
     <Tooltip content={skill} className={styles['skilllist-item-tooltip']} >

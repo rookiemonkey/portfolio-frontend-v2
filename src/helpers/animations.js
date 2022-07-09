@@ -67,6 +67,26 @@ const animateFadeInFromTop = {
 
 // END animate
 
+// START premade hover
+
+const scaleAndRotate = {
+  scale: 1.25,
+  rotate: 360,
+  transition: { duration: 0.25 },
+}
+
+const rotate = {
+  rotate: 360,
+  transition: { duration: 0.25 },
+}
+
+const scale = {
+  scale: 1.25,
+  transition: { duration: 0.25 },
+}
+
+// END premade hover
+
 // START premade variants
 
 const remove = {
@@ -149,6 +169,11 @@ const variables = {
   values: {
     delay_for_children,
     delay_for_staggered_children
+  },
+  hover: {
+    scale,
+    rotate,
+    scaleAndRotate
   }
 }
 
