@@ -28,7 +28,7 @@ const SkillList = ({ title, skills }) => {
         animate="animate"
         exit="exit"
       >
-        {skills.map((skill, index) => <SkillListItem key={skill} skill={skill} delay={index} />) }
+        {skills.map(skill => <SkillListItem key={skill} skill={skill} />) }
       </motion.ul>
     </motion.article>
   )

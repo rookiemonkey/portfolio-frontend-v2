@@ -60,6 +60,19 @@
   max-height: 65px;
 }
 
+.skilllist-item-tooltip {
+  background-color: var(--blue);
+  color: var(--backdrop);
+  font-weight: 700;
+  font-size: .75rem;
+  text-align: center;
+  padding: var(--global-padding-all);
+  min-width: 75px;
+  width: max-content;
+  max-width: 200px;
+  border-radius: var(--global-border-raidius);
+}
+
 .skilllist-item-img-container {
   width: 100%;
 }
