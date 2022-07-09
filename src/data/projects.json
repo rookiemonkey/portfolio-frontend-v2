@@ -152,7 +152,7 @@
     },
     {
       "id": "blog-v1",
-      "tittle": "Blog v1",
+      "title": "Blog v1",
       "type": "fullstack",
       "live_url": "https://krrb-prod-blogv1.herokuapp.com/",
       "github_url": "https://github.com/rookiemonkey/blogv1",

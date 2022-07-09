@@ -1,0 +1,113 @@
+.section {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.header-container h2 {
+  line-height: 75px;
+}
+
+.projects-container {
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.projects-container::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+.projects-container::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+.projects-container::-webkit-scrollbar-thumb,
+.projects-container::-webkit-scrollbar-track {
+  background: var(--blue);
+  border: 0px none var(--gray);
+  border-radius: 100px;
+}
+
+.projects-container::-webkit-scrollbar-track {
+  background: var(--gray);
+}
+
+.projects-container::-webkit-scrollbar-thumb:hover {
+  background: var(--gray);
+}
+
+.projects-container::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+
+.projects-container::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+
+.projects-container::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+
+.projects-container::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.projects-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . .";
+}
+
+.projects-list-item,
+.projects-list-item-container {
+  min-width: 100%;
+  min-height: 250px;
+  max-width: 100%;
+  max-height: 250px;
+}
+
+.projects-list-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.projects-list-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 250ms ease-in-out
+}
+
+.projects-list-item-container h3 {
+  max-width: 150px;
+  text-overflow: clip;
+  text-align: center;
+  color: var(--gray);
+}
+
+.projects-list-item-container-hovered {
+  background-color: hsla(210, 6%, 9%, 0.95);
+  min-width: max-content;
+  min-height: max-content;
+  border-radius: 35px;
+  padding: var(--global-padding-all);
+}
+
+.dimmed {
+  background-color: hsla(210, 6%, 9%, 0.95);
+  transition: background-color 250ms ease-in-out
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import data from '~/data/skills.json';
-import AnimatedLetters from "../AnimatedLetters";
+import AnimatedLetters from "~/components/AnimatedLetters";
 import SkillList from "~/components/Skills/SkillList";
 import animationVariants from "~/components/Skills/variants/content";
 import styles from '~/styles/Skills.module.css';
