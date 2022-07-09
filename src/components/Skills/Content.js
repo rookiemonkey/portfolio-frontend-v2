@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import data from '~/data/skills.json';
-import AnimatedLetters from "~/components/AnimatedLetters";
+import AnimatedLetters from "../AnimatedLetters";
 import SkillList from "~/components/Skills/SkillList";
 import animationVariants from "~/components/Skills/variants/content";
 import styles from '~/styles/Skills.module.css';
@@ -24,7 +24,7 @@ const Content = () => {
           animate="animate"
           exit="exit"
         >
-          <AnimatedLetters string={'Skills'} />  
+          <AnimatedLetters string={'Skills &*Tools'} />  
         </motion.h2> <br />
 
         <motion.p variants={animationVariants.fadeInFromLeft}>

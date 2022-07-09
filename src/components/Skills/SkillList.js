@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
+import AnimatedString from "~/components/AnimatedString";
 import SkillListItem from "~/components/Skills/SkillListItem";
 import animationVariants from "~/components/Skills/variants/skillList";
 import styles from '~/styles/Skills.module.css';
@@ -7,8 +8,8 @@ import styles from '~/styles/Skills.module.css';
 const SkillList = ({ title, skills }) => {
   const _this = useRef();
 
-  const handleHoverStart = () => _this.current.classList.add(styles['skilllist-container-hovered'])
-  const handleHoverEnd = () => _this.current.classList.remove(styles['skilllist-container-hovered'])
+  const handleHoverStart = () => _this.current.classList.add('skilllist-container-hovered')
+  const handleHoverEnd = () => _this.current.classList.remove('skilllist-container-hovered')
 
   return (
     <motion.article 
@@ -18,7 +19,7 @@ const SkillList = ({ title, skills }) => {
       onHoverEnd={handleHoverEnd}
       className={styles['skilllist-container']}
     >
-      <h1>{ title }</h1>
+      <h1>{ <AnimatedString string={title} /> }</h1>
       
       <motion.ul 
         className={styles['skilllist']}

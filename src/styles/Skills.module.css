@@ -5,7 +5,8 @@
 }
 
 .left h2 {
-  max-height: 8rem;
+  line-height: 75px;
+  min-height: 10rem;
 }
 
 .skilllist-container {
@@ -15,8 +16,6 @@
 }
 
 .skilllist-container h1 {
-  font-family: "Don Jose";
-  font-size: 1.5rem;
   text-align: right;
   text-transform: uppercase;
   letter-spacing: .25rem;
@@ -26,11 +25,11 @@
   transition: color 250ms ease-in-out;
 }
 
-.skilllist-container-hovered h1 {
-  color: var(--blue);
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+.skilllist-container h1,
+.skilllist-container h1 span {
+  display: inline-block;
+  font-family: "Don Jose";
+  font-size: 1.5rem;
 }
 
 .skilllist-container,
@@ -68,24 +67,4 @@
 .skilllist-item img {
   width: 40px;
   height: auto;
-}
-
-@keyframes glow {
-  from {
-    text-shadow: var(--blue) 0px 0px 0px;
-  }
-
-  to {
-    text-shadow: var(--blue) 0px 0px 10px;
-  }
-}
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: var(--blue) 0px 0px 0px;
-  }
-
-  to {
-    text-shadow: var(--blue) 0px 0px 10px;
-  }
 }
