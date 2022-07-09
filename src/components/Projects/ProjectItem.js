@@ -6,17 +6,20 @@ import styles from '~/styles/Projects.module.css';
 
 const ProjectItem = props => {
   const _this = useRef();
-  const gradient = useRef();
+  const gradientContainer = useRef();
+  const titleContainer = useRef();
   const { title, description, live_url, github_url, screenshot, type, technologies } = props.project;
 
   const handleOnHoverStart = () => {
-    gradient.current.classList.remove(styles['dimmed'])
-    gradient.current.classList.add(styles['projects-list-item-container-hovered'])
+    gradientContainer.current.classList.remove(styles['dimmed'])
+    gradientContainer.current.classList.add(styles['projects-list-item-container-hovered'])
+    titleContainer.current.classList.add('seek-attention')
   }
 
   const handleOnHoverEnd = () => {
-    gradient.current.classList.add(styles['dimmed'])
-    gradient.current.classList.remove(styles['projects-list-item-container-hovered'])
+    gradientContainer.current.classList.add(styles['dimmed'])
+    gradientContainer.current.classList.remove(styles['projects-list-item-container-hovered'])
+    titleContainer.current.classList.remove('seek-attention')
   }
 
   return (
@@ -29,10 +32,10 @@ const ProjectItem = props => {
       style={{ backgroundImage: `url(${screenshot})` }}
     >
       <div
-        ref={gradient}
+        ref={gradientContainer}
         className={`${styles['projects-list-item-container']} ${styles['dimmed']}`}
       >
-        <h3>{title}</h3>
+        <h3 ref={titleContainer}>{title}</h3>
       </div>
     </motion.li>
   )

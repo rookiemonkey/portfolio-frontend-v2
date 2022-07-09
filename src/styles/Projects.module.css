@@ -85,29 +85,38 @@
   background-position: center;
 }
 
+.projects-list-item-container,
+.projects-list-item-container h3 {
+  transition: all 250ms ease-in-out
+}
+
 .projects-list-item-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 250ms ease-in-out
 }
 
 .projects-list-item-container h3 {
+  font-family: "Don Jose";
   max-width: 150px;
   text-overflow: clip;
   text-align: center;
   color: var(--gray);
-}
-
-.projects-list-item-container-hovered {
-  background-color: hsla(210, 6%, 9%, 0.95);
-  min-width: max-content;
-  min-height: max-content;
   border-radius: 35px;
   padding: var(--global-padding-all);
 }
 
+.projects-list-item-container-hovered {
+  background-color: hsla(210, 6%, 9%, .4)
+}
+
+.projects-list-item-container-hovered h3 {
+  background-color: hsla(210, 6%, 9%, 1);
+  color: var(--blue);
+  text-shadow: 0 0 15px rgba(100, 242, 252, .5), 0 0 10px rgba(100, 242, 252, .5);
+  box-shadow: rgb(100, 242, 252) 0px 20px 30px -10px;
+}
+
 .dimmed {
   background-color: hsla(210, 6%, 9%, 0.95);
-  transition: background-color 250ms ease-in-out
 }
