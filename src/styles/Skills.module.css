@@ -12,7 +12,7 @@
 .skilllist-container {
   min-width: 100%;
   margin-bottom: 10%;
-  border-bottom: 2.5px solid var(--backdrop-light);
+  border-top: 2px solid var(--backdrop-light);
 }
 
 .skilllist-container h1 {
