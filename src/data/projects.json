@@ -1,0 +1,284 @@
+{
+  "data": [
+     {
+      "id": "movies-express",
+      "title": "Movies (Express)",
+      "type": "dynamic",
+      "live_url": "https://krrb-prod-movies-express.herokuapp.com/",
+      "github_url": "https://github.com/rookiemonkey/movies-express",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/moviesexpress.png",
+      "description": "An app that provides brief information on a given movie by consuming a movie database API. Responsiveness was created from scratch",
+      "technologies": ["HTML", "CSS", "Javascript", "NodeJS", "ExpressJS"]
+    },
+    {
+      "id": "chat-app",
+      "title": "Chat App",
+      "type": "dynamic",
+      "live_url": "https://krrb-prod-chatapp.herokuapp.com/",
+      "github_url": "https://github.com/rookiemonkey/chatapp",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/chatapp.png",
+      "description": "A basic chat application that allows users to send message and location. The app uses socket.io and express to handle the requests. User will be able to join a room from a list of rooms and able to create a room themselves",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript", "NodeJS", "ExpressJS"]
+    },
+    {
+      "id": "color-palletes",
+      "title": "Color Palletes",
+      "type": "dynamic",
+      "live_url": "https://krrb-prod-colorpalettes.web.app/",
+      "github_url": "https://github.com/rookiemonkey/colorpalettes",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/colorpalettes.png",
+      "description": "An interactive palette creator application that allows users to save their favorite color combinations on their machine for future reference",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript", "React"]
+    },
+    {
+      "id": "dad-jokes",
+      "title": "Dad Jokes",
+      "type": "dynamic",
+      "live_url": "https://krrb-prod-dadjokes.web.app/",
+      "github_url": "https://github.com/rookiemonkey/dadjokes",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/dadjokes.png",
+      "description": "An application that generates dad jokes from an API. Users will be able to add a like and dislikes to a joke and will be stored on the machine's local storage for data persistence. Make sure you have your sounds on to enjoy reading daddy's jokes!",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript", "React"]
+    },
+    {
+      "id": "pet-gallery",
+      "title": "Pet Gallery",
+      "type": "dynamic",
+      "live_url": "https://krrb-prod-petgallery.web.app/",
+      "github_url": "https://github.com/rookiemonkey/petgallery",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/petgallery.png",
+      "description": "A static react application that showcases pictures of dogs and cats who need a home. Also might show their traits and behaviors upon clicking their images. Utilizing 2 APIs to render random dog images and names",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript", "React"]
+    },
+    {
+      "id": "movies-next-js",
+      "title": "Movies (Nextjs)",
+      "type": "dynamic",
+      "live_url": "https://krrb-prod-movies-nextjs.vercel.app/",
+      "github_url": "https://github.com/rookiemonkey/movies-next",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/moviesnextjs.png",
+      "description": "Application that provides brief information on a given movie by consuming a movie database API. This version uses NextJS",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript", "NextJS"]
+    },
+    {
+      "id": "museum-of-candy",
+      "title": "Museum of Candy",
+      "type": "static",
+      "live_url": "https://krrb-prod-museumofcandy.netlify.app/",
+      "github_url": "https://github.com/rookiemonkey/museumofcandy",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/meseumofcandy.png",
+      "description": "Landing page for a candy company that offers sweets to satisfy customer's sweet cravings",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript"]
+    },
+    {
+      "id": "to-do-list-v1",
+      "title": "To-do List v1",
+      "type": "static",
+      "live_url": "https://krrb-prod-todolistv1.netlify.app/",
+      "github_url": "https://github.com/rookiemonkey/todolist-v1",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/todolistv1.png",
+      "description": "A basic CRUD application using vanilla Javascript and responsiveness was made from scratch",
+      "technologies": ["HTML", "CSS", "Javascript"]
+    },
+    {
+      "id": "weather-app-v2",
+      "title": "Weather App v2",
+      "type": "static",
+      "live_url": "https://krrb-prod-weatherappv2.web.app/",
+      "github_url": "https://github.com/rookiemonkey/weatherapp-v2",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/weatherappv2.png",
+      "description": "A weather application that displays weather data depending on the user input. It interacts with 2 APIs, one geocodes the input then the other one gathers information depending on the results. It displays 5-day and 7-day forecast.",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript", "React"]
+    },
+    {
+      "id": "dk&o-solutions-hub",
+      "title": "DK&O Solutions Hub",
+      "type": "static",
+      "live_url": "https://krrb-prod-dkosolutions.netlify.app/",
+      "github_url": "https://github.com/rookiemonkey/dkosolutions",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/dkosolutions.png",
+      "description": "A landing page for a small trading business that focuses on connecting 2 different clients with their business needs. This is one of my friends startup business.",
+      "technologies": ["HTML", "CSS", "Javascript", "NodeJS"]
+    },
+    {
+      "id": "mountain-travel",
+      "title": "Mountain Travel",
+      "type": "static",
+      "live_url": "https://krrb-prod-mountaintravel.netlify.app/",
+      "github_url": "https://github.com/rookiemonkey/mountaintravel",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/mountaintravel.png",
+      "description": "Landing page for a travel website offering travel packages",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript"]
+    },
+    {
+      "id": "technical-documentation",
+      "title": "Technical Documentation",
+      "type": "static",
+      "live_url": "https://krrb-prod-technicaldocumentation.netlify.app/",
+      "github_url": "https://github.com/rookiemonkey/techdocumentation",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/technicaldocumentation.png",
+      "description": "A simple technical documentation page about creating responsive websites from scratch using relative units, flexbox, and grid",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript"]
+    },
+    {
+      "id": "calculator",
+      "title": "Calculator",
+      "type": "static",
+      "live_url": "https://krrb-prod-calculator.netlify.app/",
+      "github_url": "https://github.com/rookiemonkey/calculator",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/calculator.png",
+      "description": "A simple/basic calculator that calculates series of inputs in relation to the previous result",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript"]
+    },
+    {
+      "id": "matemail-co",
+      "title": "Matemail Co.",
+      "type": "static",
+      "live_url": "https://krrb-prod-matemailco-homepage.netlify.app/",
+      "github_url": "https://github.com/rookiemonkey/matemailco",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/matemailco.png",
+      "description": "A landing page for a trading company showcasing their products and their company progress throughout out the years. NOTE: The company owner never saw had a chance to see this version of their current website.",
+      "technologies": ["HTML", "CSS", "Javascript", "NodeJS"]
+    },
+    {
+      "id": "patatap",
+      "title": "Patatap",
+      "type": "static",
+      "live_url": "https://krrb-prod-patatap.netlify.app/",
+      "github_url": "https://github.com/rookiemonkey/patatapclone",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/patatap.png",
+      "description": "Patatap is a portable animation and sound kit. With the touch of a finger create melodies charged with moving shapes. My version uses Howler.js for the audio and Particles.js for the dynamic background. Warning: contains flashing images.",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript", "NodeJS"]
+    },
+    {
+      "id": "blog-v1",
+      "tittle": "Blog v1",
+      "type": "fullstack",
+      "live_url": "https://krrb-prod-blogv1.herokuapp.com/",
+      "github_url": "https://github.com/rookiemonkey/blogv1",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/blogv1.png",
+      "description": "A blogging application allows a user with confirmed accounts to post blogs. For this one, It is a food blog application",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript", "NodeJS", "ExpressJS", "MongoDB"]
+    },
+    {
+      "id": "blog-v3",
+      "title": "Blog v3",
+      "type": "fullstack",
+      "live_url": "https://krrb-prod-blogv3.herokuapp.com/",
+      "github_url": "https://github.com/rookiemonkey/blogv3-php",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/blogappv3.png",
+      "description": "A blogging application with a dashboard to manage current user posts and comments. Also features an admin dashboard as well. This one is a travel blog variant",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript", "PHP", "MySQL"]
+    },
+    {
+      "id": "dev-camper",
+      "title": "Dev Camper",
+      "type": "fullstack",
+      "live_url": "https://krrb-prod-devcamper.vercel.app/",
+      "github_url": "https://github.com/rookiemonkey/devcamper-frontend",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/devcamper.png",
+      "description": "This platform allows users to search for a bootcamp that suits their needs and assets. Features such as search via nearest bootcamps, their offers and prices.",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript", "NodeJS", "ExpressJS", "NextJS", "MongoDB"]
+    },
+    {
+      "id": "warbler",
+      "title": "Warbler",
+      "type": "fullstack",
+      "live_url": "https://krrb-prod-warbler.web.app/",
+      "github_url": "https://github.com/rookiemonkey/warbler-frontend",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/warbler.png",
+      "description": "This is one my first react projects. It also utilizes redux for frontend data store. The original warbler was part of one of the courses the I took, however, I made a bit different to explore what else I can do.",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript", "NodeJS", "ExpressJS", "React", "Redux", "MongoDB"]
+    },
+    {
+      "id": "lights-out",
+      "title": "Lights Out",
+      "type": "game",
+      "live_url": "https://krrb-prod-lightsout.web.app/",
+      "github_url": "https://github.com/rookiemonkey/lightsout",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/lightsout.png",
+      "description": "Lights Out original game is an electronic game released by Tiger Electronics in 1995. The original game of has a 5 by 5 grid of lights. The goal is to light up all the cells",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript", "React"]
+    },
+    {
+      "id": "guess-the-country",
+      "title": "Guess The Country",
+      "type": "game",
+      "live_url": "https://krrb-prod-guessthecountry.web.app/",
+      "github_url": "https://github.com/rookiemonkey/guessthecountrygame",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/guessthecountry.png",
+      "description": "A game that lets the player guess a country by the given flag. Player is given 10 hearts and given 1 point each correct answer. Before moving onto the next question, a quick trivia will appear and it will show the geographical position of the country. A summary will be given after the game.",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript", "React"]
+    },
+    {
+      "id": "memory-game",
+      "title": "Memory Game",
+      "type": "game",
+      "live_url": "https://krrb-prod-memorygame.web.app/",
+      "github_url": "https://github.com/rookiemonkey/memorygame",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/memorygame.png",
+      "description": "Sharpen your memory and have fun at the same time by playing this game and listening to the soothing background music.",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript", "React"]
+    },
+    {
+      "id": "guess-the-password",
+      "title": "Guess The Password",
+      "type": "game",
+      "live_url": "https://krrb-prod-guessthepassword.netlify.app/",
+      "github_url": "https://github.com/rookiemonkey/guessthepassword",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/guessthepassword.png",
+      "description": "A game that lets the player guess the password. Hints are going to be provided as the game progresses however, player only has 4 tries to land on the correct password.",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript", "JQuery"]
+    },
+    {
+      "id": "the-great-color-game",
+      "title": "The Great Color Game",
+      "type": "game",
+      "live_url": "https://krrb-prod-thegreatcolorgame.netlify.app/",
+      "github_url": "https://github.com/rookiemonkey/greatcolorgame",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/greatcolorgame.png",
+      "description": "A color guessing game that tests your knowledge about RGB colors. The game is build only with vanilla Javascript however, it is not that fully responsive.",
+      "technologies": ["HTML", "CSS", "Javascript", "NodeJS"]
+    },
+    {
+      "id": "note-taking-app-cli",
+      "title": "Note Taking App (CLI)",
+      "type": "cli",
+      "live_url": "",
+      "github_url": "https://github.com/rookiemonkey/notetaking",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/notetakingapp.jpg",
+      "description": "A simple command line application that allows users to saves notes on their machine and access it when needed. A deadline is indicated to each notes, so user is reminded when to finish a certain note/task",
+      "technologies": ["NodeJS"]
+    },
+    {
+      "id": "yelp-camp",
+      "title": "Yelp Camp",
+      "type": "fullstack",
+      "live_url": "https://krrb-prod-yelpcamp.herokuapp.com/",
+      "github_url": "https://github.com/rookiemonkey/yelpcamp",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/yelpcamp.png",
+      "description": "A camper application to browse available camps in the country. Reviews and comments and present and use can also upload their own camp for others to see and visit.",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript", "NodeJS", "ExpressJS", "MongoDB"]
+    },
+    {
+      "id": "purrfect",
+      "title": "Purrfect",
+      "type": "static",
+      "live_url": "https://krrb-prod-cats.netlify.app/",
+      "github_url": "https://github.com/rookiemonkey/cats",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/cats.png",
+      "description": "A header page for a cat day care center",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript", "NodeJS", "ExpressJS", "MongoDB"]
+    },
+        {
+      "id": "hangman",
+      "title": "Hangman",
+      "type": "game",
+      "live_url": "https://krrb-prod-hangman.web.app/",
+      "github_url": "https://github.com/rookiemonkey/hangmangame",
+      "screenshot": "https://storage.googleapis.com/portfolio-289404/hangman.png",
+      "description": "Hangman is a paper and pencil guessing game for two or more players. One player thinks of a word, phrase or sentence and the other(s) tries to guess it by suggesting letters within a certain number of guesses.",
+      "technologies": ["HTML", "CSS", "SASS", "Javascript", "React"]
+    }
+  ]
+}
