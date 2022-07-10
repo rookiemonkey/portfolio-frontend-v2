@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import projects from '~/data/projects.json';
 import AnimatedLetters from "~/components/AnimatedLetters";
 import ProjectItem from "~/components/Projects/ProjectItem";
+import applySmoothScroll from "~/helpers/applySmoothScroll";
 import animationVariants from "~/components/Projects/variants/content";
 import styles from '~/styles/Projects.module.css';
 
 const Content = () => {
+  const projectsContainer = useRef();
+
+  useEffect(() => applySmoothScroll(projectsContainer.current, 150, 100), [])
 
   return(
     <React.Fragment>
@@ -22,7 +26,7 @@ const Content = () => {
         </motion.h2>
       </div>
 
-      <div className={styles['projects-container']}>
+      <div ref={projectsContainer} className={styles['projects-container']}>
         <motion.ul 
           variants={animationVariants.projects}
           initial="initial"
