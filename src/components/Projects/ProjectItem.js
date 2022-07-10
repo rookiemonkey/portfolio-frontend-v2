@@ -51,7 +51,7 @@ const ProjectItem = props => {
                 exit="exit"
                 className={styles['project-list-item-technologies']}
               >
-                {technologies.map(tech => <ProjectItemTechnology tech={tech} />)}
+                {technologies.map(tech => <ProjectItemTechnology key={tech} tech={tech} />)}
               </motion.ul>
 
               <motion.div
