@@ -1,3 +1,18 @@
+.greetings {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.greetings h3 {
+  color: var(--gray);
+  font-family: 'Raleway';
+  font-size: 2rem;
+}
+
 .contents {
   display: flex;
   padding: var(--global-padding-sides);

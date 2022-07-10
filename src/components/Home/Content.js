@@ -16,7 +16,7 @@ const Content = () => {
         className={styles['header-container']}
       >
         <motion.p variants={animationVariants.fadeInFromTop} className={styles['salutation']}>
-          Hi! I'm
+          I am
         </motion.p>
 
         <motion.h1 variants={animationVariants.exitParentImmediately} initial="initial" animate="animate" exit={contentVariants.fadeOut} className={styles['header']}>

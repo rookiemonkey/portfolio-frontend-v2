@@ -1,4 +1,6 @@
 const normalizeHeight = element => {
+  if (!element.current) return null
+
   let height = 0
 
   // if zoomed out use window.screen.height

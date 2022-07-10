@@ -20,6 +20,7 @@ const content = {
 
 const variants = {
   content,
+  greetings: { ...variables.variants.fadeInFromBottom, exit: { ...variables.initial_exit.hiddenFadeIn }},
   exitParentImmediately: variables.variants.exitParentImmediately,
   fadeOut: variables.initial_exit.hiddenFadeIn,
   fadeInFromTop: variables.variants.fadeInFromTop,
