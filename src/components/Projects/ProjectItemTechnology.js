@@ -11,7 +11,7 @@ const ProjectItemTechnology = ({ tech }) => {
       className={styles['project-list-item-technologies-item']}
     >
       <img
-        src={require(`~/assets/images/${tech.toLowerCase()}.png`)}
+        src={require(`~/assets/images/skills/${tech.toLowerCase()}.png`)}
         alt={tech}
       />
     </motion.li>

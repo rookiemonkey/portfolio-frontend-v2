@@ -12,7 +12,7 @@ const SkillListItem = ({ skill }) => (
     <Tooltip content={skill} className={styles['skilllist-item-tooltip']} >
       <div className={styles['skilllist-item-img-container']}>
           <img 
-            src={require(`~/assets/images/${skill.toLowerCase()}.png`)} 
+            src={require(`~/assets/images/skills/${skill.toLowerCase()}.png`)} 
             alt={skill} 
           />
       </div>
