@@ -140,6 +140,21 @@ const fadeInFromTop = {
 
 // END premade variants
 
+const exitParentImmediately = {
+  'animate': {
+    transition: {
+      when: "beforeChildren",
+      delayChildren: delay_for_children,
+      staggerChildren: delay_for_staggered_children
+    }
+  },
+  'exit': {
+    transition: {
+      when: "beforeChildren"
+    }
+  }
+}
+
 const variables = {
   initial_exit: {
     hiddenScaleIn,
@@ -158,6 +173,7 @@ const variables = {
     animateFadeInFromTop
   },
   variants: {
+    exitParentImmediately,
     remove,
     scaleIn,
     fadeIn,

@@ -28,19 +28,32 @@
 }
 
 .header {
+  max-width: 400px;
+  text-overflow: clip;
+}
+
+.header,
+.header span {
+  overflow: hidden;
+  display: inline-block;
   font-family: "Don Jose";
   font-size: 5rem;
   color: var(--gray-lighter);
   line-height: 75px;
 }
 
+.header-container marquee {
+  max-width: 600px;
+}
+
 .salutation,
-.subheader {
+marquee span {
   color: var(--blue);
   font-size: var(--global-font-size-for-subheaders);
 }
 
-.subheader {
+marquee span {
+  display: inline-block;
   width: max-content;
   font-weight: 700;
 }
