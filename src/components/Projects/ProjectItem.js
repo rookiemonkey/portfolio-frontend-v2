@@ -54,14 +54,15 @@ const ProjectItem = props => {
                 {technologies.map(tech => <ProjectItemTechnology tech={tech} />)}
               </motion.ul>
 
-              <div
+              <motion.div
+                variants={animationVariants.technologies}
+                initial="initial"
+                animate="animate"
+                exit="exit"
                 className={styles['project-list-item-links']}
               >
                 {(live_url && <motion.a 
                     variants={animationVariants.fadeInFromBottom}
-                    initial="initial"
-                    animate="animate"
-                    exit="exit"
                     href={live_url} 
                     target="_blank"
                     >
@@ -73,9 +74,6 @@ const ProjectItem = props => {
                 {
                   (github_url && <motion.a 
                     variants={animationVariants.fadeInFromBottom}
-                    initial="initial"
-                    animate="animate"
-                    exit="exit"
                     href={github_url} 
                     target="_blank"
                     >
@@ -85,7 +83,7 @@ const ProjectItem = props => {
                     </motion.a>
                   )
                 }
-              </div>
+              </motion.div>
             </React.Fragment>
           )
           : null
