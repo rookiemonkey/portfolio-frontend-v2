@@ -9,7 +9,7 @@ const ProjectItem = props => {
   const gradientContainer = useRef();
   const titleContainer = useRef();
   const [isActive, setIsActive] = useState(false);
-  const { title, live_url, github_url, screenshot, type, technologies } = props.project;
+  const { title, live_url, github_url, filename, type, technologies } = props.project;
 
   const handleOnHoverStart = () => {
     setIsActive(true)
@@ -32,7 +32,7 @@ const ProjectItem = props => {
       onHoverStart={handleOnHoverStart}
       onHoverEnd={handleOnHoverEnd}
       className={styles['projects-list-item']} 
-      style={{ backgroundImage: `url(${screenshot})` }}
+      style={{ backgroundImage: `url(${require('~/assets/images/projects/' + filename) })` }}
     >
       <div
         ref={gradientContainer}
