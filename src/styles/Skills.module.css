@@ -87,12 +87,13 @@
 .skilllist-item-hovered,
 .skilllist-item-hovered img {
   transition: all 250ms ease-in-out;
-  transform-origin: bottom;
+  transform-origin: center;
 }
 
 .skilllist-item {
-  min-width:  30px;
-  max-width:  30px;
+  min-width: 35px;
+  max-width: 35px;
+  margin-left: 2.5%;
 }
 
 .skilllist-item-img-container {
@@ -100,17 +101,17 @@
 }
 
 .skilllist-item img {
-  width: 25px;
-  min-width: 25px;
-  max-width: 25px;
+  width: 35px;
+  min-width: 35px;
+  max-width: 35px;
   height: auto;
 }
 
 .skilllist-item-hovered {
-  min-width: 60px;
-  max-width: 60px;
+  min-width: 75px;
+  max-width: 75px;
 }
 
 .skilllist-item-hovered img {
-  transform: scale(2);
+  transform: scale(2) rotate(360deg);
 }
