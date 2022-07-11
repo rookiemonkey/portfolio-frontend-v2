@@ -9,7 +9,7 @@ const ProjectItem = props => {
   const gradientContainer = useRef();
   const titleContainer = useRef();
   const [isActive, setIsActive] = useState(false);
-  const { title, live_url, github_url, filename, type, technologies } = props.project;
+  const { title, live_url, github_url, filename, technologies } = props.project;
 
   const handleOnHoverStart = () => {
     setIsActive(true)
