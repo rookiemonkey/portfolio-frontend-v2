@@ -21,10 +21,6 @@ const SkillList = ({ title, skills }) => {
       className={styles['skilllist-container']}
     >
       
-      <div className={styles['left']}>
-        <img src={require(`~/assets/${title.toLowerCase()}.svg`)} alt={title} />
-      </div>
-
       <div className={styles['right']}>
         <div className={styles['skilllist-header']}>
           <h1>{<AnimatedString string={title} animateExit={false} />}</h1>
@@ -49,6 +45,10 @@ const SkillList = ({ title, skills }) => {
         >
           {skills.map(skill => <SkillListItem key={skill} skill={skill} setActive={setActive} />)}
         </motion.ul>
+      </div>
+
+      <div className={styles['left']}>
+        <img src={require(`~/assets/${title.toLowerCase()}.svg`)} alt={title} />
       </div>
 
     </motion.article>
