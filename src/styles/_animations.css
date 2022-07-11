@@ -8,10 +8,6 @@
   animation: glow 1s ease-in-out infinite alternate;
 }
 
-.navigation-links-hovered a.hovered {
-  transition: color 750ms ease-in-out;
-}
-
 @keyframes glow {
   from {
     text-shadow: var(--blue) 0px 0px 0px;

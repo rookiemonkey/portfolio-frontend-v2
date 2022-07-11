@@ -5,7 +5,7 @@ import styles from '~/styles/Home.module.css';
 
 const Greetings = ({ setHasGreeted }) => {
 
-  useEffect(() => {setTimeout(() => setHasGreeted(true), 2000)}, [])
+  useEffect(() => { setTimeout(() => setHasGreeted(true), 2000) }, [setHasGreeted])
 
   return (
     <motion.div 

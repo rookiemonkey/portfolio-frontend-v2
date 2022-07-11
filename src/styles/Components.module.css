@@ -18,6 +18,8 @@
 .navigation,
 .navigation-logo,
 .navigation-links,
+.navigation-links span,
+.navigation-links span a,
 .navigation-footer {
   width: 100px;
 }
@@ -46,7 +48,15 @@
 .navigation-links a {
   display: inline-block;
   color: var(--gray);
-  padding: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+  padding-left: 0;
+  padding-right: 0;
+  transition: color 250ms ease-in-out;
+}
+
+.active a {
+  font-weight: 700;
 }
 
 .navigation svg {
