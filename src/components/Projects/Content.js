@@ -10,7 +10,7 @@ import styles from '~/styles/Projects.module.css';
 const Content = () => {
   const projectsContainer = useRef();
 
-  useEffect(() => applySmoothScroll(projectsContainer.current, 150, 100), [])
+  useEffect(() => applySmoothScroll(projectsContainer.current, 120, 24), [])
 
   return(
     <React.Fragment>
