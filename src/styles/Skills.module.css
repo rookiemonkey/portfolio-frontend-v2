@@ -25,41 +25,48 @@
 }
 
 .skilllist-container .left {
-  width: 25%;
-  min-width: 25%;
-  max-width: 25%;
+  width: 30%;
+  min-width: 30%;
+  max-width: 30%;
 }
 
 .skilllist-container .left img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .skilllist-container .right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 75%;
-  min-width: 75%;
-  max-width: 75%;
+  width: 70%;
+  min-width: 70%;
+  max-width: 70%;
 }
 
-.skilllist-container h1 {
-  text-align: right;
+.skilllist-container .right,
+.skilllist-container .skilllist-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skilllist-container .skilllist-header h1 {
   text-transform: uppercase;
   letter-spacing: .25rem;
   color: var(--backdrop-lighter);
   overflow: hidden;
-  padding: 0 2.5% 0 2.5%;
-  margin-bottom: 2.5%;
   transition: color 250ms ease-in-out;
 }
 
-.skilllist-container h1,
-.skilllist-container h1 span {
+.skilllist-container .skilllist-header h1,
+.skilllist-container .skilllist-header h1 span {
   display: inline-block;
   font-family: "Don Jose";
   font-size: 1.5rem;
+}
+
+.skilllist-container .skilllist-header h1,
+.skilllist-container .skilllist-header p {
+  text-align: right;
+  padding: 0 2.5% 0 2.5%;
 }
 
 .skilllist-item,
@@ -75,24 +82,17 @@
   flex-wrap: wrap;
 }
 
-.skilllist-item {
-  min-width:  50px;
-  max-width:  50px;
-  min-height: 50px;
-  max-height: 50px;
+.skilllist-item,
+.skilllist-item img,
+.skilllist-item-hovered,
+.skilllist-item-hovered img {
+  transition: all 250ms ease-in-out;
+  transform-origin: bottom;
 }
 
-.skilllist-item-tooltip {
-  background-color: var(--blue);
-  color: var(--backdrop);
-  font-weight: 700;
-  font-size: .75rem;
-  text-align: center;
-  padding: var(--global-padding-all);
-  min-width: 75px;
-  width: max-content;
-  max-width: 200px;
-  border-radius: var(--global-border-raidius);
+.skilllist-item {
+  min-width:  30px;
+  max-width:  30px;
 }
 
 .skilllist-item-img-container {
@@ -100,6 +100,17 @@
 }
 
 .skilllist-item img {
-  width: 40px;
+  width: 25px;
+  min-width: 25px;
+  max-width: 25px;
   height: auto;
+}
+
+.skilllist-item-hovered {
+  min-width: 60px;
+  max-width: 60px;
+}
+
+.skilllist-item-hovered img {
+  transform: scale(2);
 }

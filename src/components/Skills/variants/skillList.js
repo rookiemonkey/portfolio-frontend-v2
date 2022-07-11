@@ -42,7 +42,8 @@ const list = {
 
 const variants = {
   listContainer,
-  list
+  list,
+  fadeIn: variables.variants.fadeIn
 }
 
 export default variants;
