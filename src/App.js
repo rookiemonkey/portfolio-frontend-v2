@@ -5,6 +5,7 @@ import Backdrop from '~/hocs/Backdrop';
 import Window from '~/hocs/Window';
 import Contain from '~/hocs/Contain';
 import Navigation from '~/components/Navigation';
+import Greetings from './components/Greetings';
 import AnimatedRoutes from '~/AnimatedRoutes';
 
 const App = () => {
@@ -19,7 +20,11 @@ const App = () => {
             <Navigation/>
 
             <Contain>
+
+              <Greetings />
+
               <AnimatedRoutes/>
+
             </Contain>
 
           </Window>

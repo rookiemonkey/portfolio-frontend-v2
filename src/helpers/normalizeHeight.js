@@ -1,5 +1,5 @@
 const normalizeHeight = element => {
-  if (!element.current) return null
+  if (!element.current) return function(){}
 
   let height = 0
 

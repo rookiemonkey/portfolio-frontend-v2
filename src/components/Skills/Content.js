@@ -13,16 +13,11 @@ const Content = () => {
 
       <motion.div 
         variants={animationVariants.content}
-        initial="initial"
-        animate="animate"
-        exit="exit"
         className={styles['left']}
       >
         <motion.h2
           variants={animationVariants.letters}
-          initial="initial"
-          animate="animate"
-          exit="exit"
+
         >
           <AnimatedLetters string={'Skills &*Tools'} />  
         </motion.h2> <br />
@@ -42,9 +37,6 @@ const Content = () => {
 
       <motion.div 
         variants={animationVariants.content}
-        initial="initial"
-        animate="animate"
-        exit="exit"
         className={styles['right']}
       >
         {Object.keys(data).map(title => <SkillList key={title} title={title} skills={data[title]} />)}

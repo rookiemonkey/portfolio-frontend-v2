@@ -1,15 +1,14 @@
 import React, { useEffect, useRef, useContext } from 'react'
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { GreetingsContext } from '~/context/Greetings';
 import styles from '~/styles/Home.module.css';
-import Greetings from '~/components/Home/Greetings';
 import Content from '~/components/Home/Content';
 import SVGCartoon from '~/components/Home/SVGCartoon';
 import pageVariants from "~/pages/variants/pageTransitions";
 import normalizeHeight from '~/helpers/normalizeHeight';
 
 const Home = () => {
-  const { hasGreeted, setHasGreeted } = useContext(GreetingsContext); 
+  const { hasGreeted } = useContext(GreetingsContext); 
   const contents = useRef();
   const left = useRef();
   const right = useRef();
@@ -18,15 +17,11 @@ const Home = () => {
 
   return (
     <>
-      <AnimatePresence>
-        { !hasGreeted ? <Greetings setHasGreeted={setHasGreeted} /> : null }
-      </AnimatePresence>
-
       {
         hasGreeted
           ? (<motion.div
             variants={pageVariants.pageTransition}
-            initial="initial"
+            initial="initial" 
             animate="animate"
             exit="exit"
             className={styles['contents']}

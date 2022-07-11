@@ -13,32 +13,24 @@ const Content = () => {
   useEffect(() => applySmoothScroll(projectsContainer.current, 120, 24), [])
 
   return(
-    <React.Fragment>
-      
+    <>
       <div className={styles['header-container']}>
         <motion.h2
           variants={animationVariants.letters}
-          initial="initial"
-          animate="animate"
-          exit="exit"
         >
           <AnimatedLetters string={'Projects'} />
         </motion.h2>
       </div>
 
       <div ref={projectsContainer} className={styles['projects-container']}>
-        <motion.ul 
+        <motion.ul
           variants={animationVariants.projects}
-          initial="initial"
-          animate="animate"
-          exit="exit"
           className={styles['projects-list']}
         >
-          { projects.data.map(project => <ProjectItem key={project.id} project={project} />) }
+          {projects.data.map(project => <ProjectItem key={project.id} project={project} />)}
         </motion.ul>
       </div>
-
-    </React.Fragment>
+    </>
   )
 }
 

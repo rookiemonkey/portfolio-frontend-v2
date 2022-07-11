@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import AnimatedString from "../AnimatedString";
 import AnimatedLetters from "../AnimatedLetters";
-import contentVariants from "~/components/Home/variants/content";
 import animationVariants from "~/components/Home/variants/content";
 import styles from "~/styles/Home.module.css";
 
@@ -11,25 +10,25 @@ const Content = () => {
   return (
     <>
       <motion.div 
-        variants={contentVariants.content}
+        variants={animationVariants.content}
         className={styles['header-container']}
       >
         <motion.p variants={animationVariants.fadeInFromTop} className={styles['salutation']}>
           I am
         </motion.p>
 
-        <motion.h1 variants={animationVariants.exitParentImmediately} initial="initial" animate="animate" exit={contentVariants.fadeOut} className={styles['header']}>
+        <motion.h1 variants={animationVariants.exitParentImmediately} initial="initial" animate="animate" exit={animationVariants.fadeOut} className={styles['header']}>
           <AnimatedLetters string="Kevin Roi Basina" animateExit={false} />
         </motion.h1>
 
         {/* Look for an alternative to marquee */}
-        <motion.marquee variants={animationVariants.exitParentImmediately} initial="initial" animate="animate" exit={contentVariants.fadeOut} scrollamount="15">
+        <motion.marquee variants={animationVariants.exitParentImmediately} initial="initial" animate="animate" exit={animationVariants.fadeOut} scrollamount="15">
           <AnimatedString string={"full-stack software developer.     frustrated designer.     coffee lover."} minWidth="13px" animateExit={false} />
         </motion.marquee>
       </motion.div>
 
       <motion.div 
-        variants={contentVariants.content}
+        variants={animationVariants.content}
         className={styles['contact-container']}
       >
         <motion.a variants={animationVariants.fadeInFromBottom} href="https://github.com/rookiemonkey" target="_blank" rel="noreferrer">
