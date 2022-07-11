@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import normalizeHeight from "~/helpers/normalizeHeight";
+import pageAnimations from '~/pages/variants/pageTransitions';
 import animations from '~/helpers/animations';
 import styles from '~/styles/Components.module.css';
 import cartoon from '~/assets/cartoon.png';
@@ -14,8 +15,6 @@ const Navigation = () => {
 
   useEffect(() => normalizeHeight(_this), [])
 
-  console.log(pathname)
-
   const onHoverStart = ({ target }) => {
     target.querySelector('a').classList.add('hovered')
     navigationLinks.current.classList.add('navigation-links-hovered')
@@ -27,28 +26,50 @@ const Navigation = () => {
   }
 
   return (
-    <nav ref={_this} className={styles['navigation']}>
+    <motion.nav 
+      variants={pageAnimations.pageTransition}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      ref={_this} 
+      className={styles['navigation']}
+    >
 
-      <div className={styles['navigation-logo']}>
+      <motion.div variants={animations.variants.fadeInFromLeft} className={styles['navigation-logo']}>
         <Link to='/'>
           <img src={cartoon} alt="Cartoon" />
         </Link>
-      </div>
+      </motion.div>
 
       <div ref={navigationLinks} className={styles['navigation-links']}>
-        <motion.span onHoverStart={onHoverStart} onHoverEnd={onHoverEnd} className={pathname === '/' ? styles['active'] : '' }>
+        <motion.span 
+          variants={animations.variants.fadeInFromLeft} 
+          onHoverStart={onHoverStart} 
+          onHoverEnd={onHoverEnd} 
+          className={pathname === '/' ? styles['active'] : '' }
+        >
           <Link to='/'>
             Home
           </Link>
         </motion.span>
 
-        <motion.span onHoverStart={onHoverStart} onHoverEnd={onHoverEnd} className={pathname === '/skills' ? styles['active'] : '' }>
+        <motion.span 
+          variants={animations.variants.fadeInFromLeft}
+          onHoverStart={onHoverStart}
+          onHoverEnd={onHoverEnd}
+          className={pathname === '/skills' ? styles['active'] : '' }
+        >
           <Link to='/skills'>
             Skills
           </Link>
         </motion.span>
 
-        <motion.span onHoverStart={onHoverStart} onHoverEnd={onHoverEnd} className={pathname === '/projects' ? styles['active'] : '' }>
+        <motion.span
+          variants={animations.variants.fadeInFromLeft}
+          onHoverStart={onHoverStart}
+          onHoverEnd={onHoverEnd}
+          className={pathname === '/projects' ? styles['active'] : '' }
+        >
           <Link to='/projects'>
             Projects
           </Link>
@@ -56,11 +77,11 @@ const Navigation = () => {
       </div>
 
       <div className={styles['navigation-footer']}>
-        <span>made with</span>
-        <motion.img  whileHover={animations.hover.rotate} src={reactimg} alt="react" title="ReactJS" />
+        <motion.span variants={animations.variants.fadeInFromLeft}>made with</motion.span>
+        <motion.img variants={animations.variants.fadeInFromLeft} whileHover={animations.hover.rotate} src={reactimg} alt="react" title="ReactJS" />
       </div>
 
-    </nav>
+    </motion.nav>
   )
 }
 
