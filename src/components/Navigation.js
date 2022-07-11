@@ -14,7 +14,7 @@ const Navigation = () => {
 
       <div className={styles['navigation-logo']}>
         <Link to='/'>
-          <img src={cartoon} />
+          <img src={cartoon} alt="Cartoon" />
         </Link>
       </div>
 
