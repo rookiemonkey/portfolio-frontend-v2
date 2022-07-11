@@ -2,8 +2,10 @@ import React, { useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import normalizeHeight from "~/helpers/normalizeHeight";
+import animations from '~/helpers/animations';
 import styles from '~/styles/Components.module.css';
 import cartoon from '~/assets/cartoon.png';
+import reactimg from '~/assets/images/skills/react.png';
 
 const Navigation = () => {
   const _this = useRef()
@@ -54,6 +56,8 @@ const Navigation = () => {
       </div>
 
       <div className={styles['navigation-footer']}>
+        <span>made with</span>
+        <motion.img  whileHover={animations.hover.rotate} src={reactimg} alt="react" title="ReactJS" />
       </div>
 
     </nav>
