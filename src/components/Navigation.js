@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { GreetingsContext } from "~/context/Greetings";
 import normalizeHeight from "~/helpers/normalizeHeight";
 import pageAnimations from '~/pages/variants/pageTransitions';
 import animations from '~/helpers/animations';
@@ -9,11 +10,15 @@ import cartoon from '~/assets/cartoon.png';
 import reactimg from '~/assets/images/skills/react.png';
 
 const Navigation = () => {
-  const _this = useRef()
+  const { hasGreeted } = useContext(GreetingsContext);
+  const controls = useAnimation()
+  const _this = useRef();
   const { pathname } = useLocation();
-  const navigationLinks = useRef()
+  const navigationLinks = useRef();
 
   useEffect(() => normalizeHeight(_this), [])
+
+  useEffect(() => { (function () { if (!hasGreeted) return null; controls.start('animate') })() }, [hasGreeted, controls])
 
   const onHoverStart = ({ target }) => {
     target.querySelector('a').classList.add('hovered')
@@ -29,7 +34,7 @@ const Navigation = () => {
     <motion.nav 
       variants={pageAnimations.pageTransition}
       initial="initial"
-      animate="animate"
+      animate={controls}
       exit="exit"
       ref={_this} 
       className={styles['navigation']}

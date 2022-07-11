@@ -1,5 +1,6 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useContext } from 'react'
 import { motion, AnimatePresence } from 'framer-motion';
+import { GreetingsContext } from '~/context/Greetings';
 import styles from '~/styles/Home.module.css';
 import Greetings from '~/components/Home/Greetings';
 import Content from '~/components/Home/Content';
@@ -7,7 +8,8 @@ import SVGCartoon from '~/components/Home/SVGCartoon';
 import pageVariants from "~/pages/variants/pageTransitions";
 import normalizeHeight from '~/helpers/normalizeHeight';
 
-const Home = ({ hasGreeted, setHasGreeted }) => {
+const Home = () => {
+  const { hasGreeted, setHasGreeted } = useContext(GreetingsContext); 
   const contents = useRef();
   const left = useRef();
   const right = useRef();
