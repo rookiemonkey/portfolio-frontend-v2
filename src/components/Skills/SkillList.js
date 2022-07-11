@@ -27,7 +27,7 @@ const SkillList = ({ title, skills }) => {
 
       <div className={styles['right']}>
         <div className={styles['skilllist-header']}>
-          <h1>{<AnimatedString string={title} />}</h1>
+          <h1>{<AnimatedString string={title} animateExit={false} />}</h1>
 
           <AnimatePresence exitBeforeEnter>
           { 
