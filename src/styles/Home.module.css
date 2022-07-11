@@ -37,8 +37,7 @@
   z-index: 99;
 }
 
-.header-container,
-.navigation-container {
+.header-container {
   margin-bottom: 5%;
 }
 
@@ -71,33 +70,6 @@ marquee span {
   display: inline-block;
   width: max-content;
   font-weight: 700;
-}
-
-.navigation-container,
-.navigation-container svg {
-  color: var(--gray-lighter);
-  fill: var(--gray-lighter);
-}
-
-.navigation-container svg {
-  margin-right: 2.5%;
-}
-
-.navigation-container-link {
-  display: flex;
-  align-items: center;
-  margin-bottom: 2.5%;
-  color: var(--gray-lighter);
-  text-decoration: none;
-  transition: transform 250ms ease-in-out;
-}
-
-.navigation-container-link:hover {
-  transform: translateX(10px);
-}
-
-.navigation-container-link span {
-  font-size: 1rem;
 }
 
 .vector-cartoon {

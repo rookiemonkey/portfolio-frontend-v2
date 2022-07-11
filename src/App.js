@@ -20,7 +20,7 @@ const App = () => {
             <AnimatedRoutes />
           </Contain>
 
-          </Window>
+        </Window>
         </Router>
 
       </Backdrop>
