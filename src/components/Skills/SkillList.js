@@ -19,17 +19,25 @@ const SkillList = ({ title, skills }) => {
       onHoverEnd={handleHoverEnd}
       className={styles['skilllist-container']}
     >
-      <h1>{ <AnimatedString string={title} /> }</h1>
       
-      <motion.ul 
-        className={styles['skilllist']}
-        variants={animationVariants.list}
-        initial="initial"
-        animate="animate"
-        exit="exit"
-      >
-        {skills.map(skill => <SkillListItem key={skill} skill={skill} />) }
-      </motion.ul>
+      <div className={styles['left']}>
+        <img src={require(`~/assets/${title.toLowerCase()}.svg`)} alt={title} />
+      </div>
+
+      <div className={styles['right']}>
+        <h1>{<AnimatedString string={title} />}</h1>
+
+        <motion.ul
+          className={styles['skilllist']}
+          variants={animationVariants.list}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+        >
+          {skills.map(skill => <SkillListItem key={skill} skill={skill} />)}
+        </motion.ul>
+      </div>
+
     </motion.article>
   )
 }

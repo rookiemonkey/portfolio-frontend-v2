@@ -9,10 +9,39 @@
   min-height: 10rem;
 }
 
+.skilllist-container,
+.skilllist,
+.skilllist-item,
+.skilllist-item-img-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .skilllist-container {
+  flex-direction: row;
   min-width: 100%;
   margin-bottom: 10%;
   border-top: 2px solid var(--backdrop-light);
+}
+
+.skilllist-container .left {
+  width: 25%;
+  min-width: 25%;
+  max-width: 25%;
+}
+
+.skilllist-container .left img {
+  width: 100%;
+  height: auto;
+}
+
+.skilllist-container .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 75%;
+  min-width: 75%;
+  max-width: 75%;
 }
 
 .skilllist-container h1 {
@@ -21,7 +50,8 @@
   letter-spacing: .25rem;
   color: var(--backdrop-lighter);
   overflow: hidden;
-  margin-right: 2.5%;
+  padding: 0 2.5% 0 2.5%;
+  margin-bottom: 2.5%;
   transition: color 250ms ease-in-out;
 }
 
@@ -30,14 +60,6 @@
   display: inline-block;
   font-family: "Don Jose";
   font-size: 1.5rem;
-}
-
-.skilllist-container,
-.skilllist,
-.skilllist-item,
-.skilllist-item-img-container {
-  display: flex;
-  flex-direction: column;
 }
 
 .skilllist-item,
@@ -54,10 +76,10 @@
 }
 
 .skilllist-item {
-  min-width: 65px;
-  max-width: 65px;
-  min-height: 65px;
-  max-height: 65px;
+  min-width:  50px;
+  max-width:  50px;
+  min-height: 50px;
+  max-height: 50px;
 }
 
 .skilllist-item-tooltip {
