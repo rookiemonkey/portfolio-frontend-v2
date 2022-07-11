@@ -69,9 +69,17 @@ a {
 }
 
 .contain-screen {
+  /* 100px is for the nav bar */
   z-index: 0;
-  width: 100vw;
-  max-width: 1200px;
+  margin-left: 100px;
+  width: calc(100%-100px);
+  transition: all 750ms ease-in-out;
+  transition-property: margin-left, width;
+}
+
+.contain-screen.contain-screen-with-greeting {
+  margin: 0;
+  width: 100%;
 }
 
 .contain-screen::-webkit-scrollbar {

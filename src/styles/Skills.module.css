@@ -25,9 +25,9 @@
 }
 
 .skilllist-container .left {
-  width: 30%;
-  min-width: 30%;
-  max-width: 30%;
+  width: 20%;
+  min-width: 20%;
+  max-width: 20%;
 }
 
 .skilllist-container .left img {
@@ -36,9 +36,9 @@
 }
 
 .skilllist-container .right {
-  width: 70%;
-  min-width: 70%;
-  max-width: 70%;
+  width: 80%;
+  min-width: 80%;
+  max-width: 80%;
 }
 
 .skilllist-container .right,

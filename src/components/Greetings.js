@@ -5,9 +5,9 @@ import animationVariants from '~/components/Home/variants/content';
 import styles from '~/styles/Home.module.css';
 
 const Greetings = () => {
-  const { hasGreeted, setHasGreeted } = useContext(GreetingsContext); 
+  const { hasGreeted, handleSetHasGreeted } = useContext(GreetingsContext); 
 
-  useEffect(() => { setTimeout(() => setHasGreeted(true), 2000) }, [setHasGreeted])
+  useEffect(() => { setTimeout(() => handleSetHasGreeted(), 2000) }, [handleSetHasGreeted])
 
   return (
     <AnimatePresence exitBeforeEnter>

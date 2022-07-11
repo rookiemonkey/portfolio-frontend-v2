@@ -15,7 +15,7 @@
 
 .contents {
   display: flex;
-  padding: var(--global-padding-sides);
+  padding: var(--global-padding-sides-smaller);
 }
 
 .contents-left,
@@ -39,6 +39,8 @@
 
 .header-container {
   margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {

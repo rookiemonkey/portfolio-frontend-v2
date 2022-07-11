@@ -12,7 +12,7 @@ const Contain = props => {
   }, [setCenterScreenOriginEl])
 
   return (
-    <div ref={_this} className='contain-screen'>{ props.children }</div>
+    <div ref={_this} className='contain-screen contain-screen-with-greeting'>{ props.children }</div>
   )
 }
 
