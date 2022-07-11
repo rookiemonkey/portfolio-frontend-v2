@@ -83,7 +83,7 @@ const Navigation = () => {
 
       <div className={styles['navigation-footer']}>
         <motion.span variants={animations.variants.fadeInFromLeft}>made with</motion.span>
-        <motion.img variants={animations.variants.fadeInFromLeft} whileHover={animations.hover.rotate} src={reactimg} alt="react" title="ReactJS" />
+        <motion.img variants={animations.variants.fadeInFromLeft} className="react-logo" src={reactimg} alt="react" title="ReactJS" />
       </div>
 
     </motion.nav>
