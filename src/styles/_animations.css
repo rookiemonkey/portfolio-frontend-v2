@@ -1,10 +1,15 @@
 /* GLOWING TEXT */
 
-.skilllist-container-hovered h1 {
+.skilllist-container-hovered h1,
+.navigation-links-hovered a.hovered {
   color: var(--blue) !important;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
+}
+
+.navigation-links-hovered a.hovered {
+  transition: color 750ms ease-in-out;
 }
 
 @keyframes glow {
