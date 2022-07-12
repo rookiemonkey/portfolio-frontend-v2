@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useContext, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Maintenance from "~/components/Maintenance";
 import normalizeWidth from '~/helpers/normalizeWidth';
 
