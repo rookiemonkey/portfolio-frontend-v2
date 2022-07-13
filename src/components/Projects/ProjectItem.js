@@ -25,10 +25,13 @@ const ProjectItem = props => {
     titleContainer.current.classList.remove('seek-attention')
   }
 
+  const handleAnimationEnd = () => setTimeout(() => gradientContainer.current.classList.add(styles['dimmed']), 100)
+
   return (
     <motion.li
       ref={_this}
       variants={{ ...animationVariants.scaleIn, exit:{} }}
+      onAnimationComplete={handleAnimationEnd}
       onHoverStart={handleOnHoverStart}
       onHoverEnd={handleOnHoverEnd}
       className={styles['projects-list-item']} 
@@ -36,7 +39,7 @@ const ProjectItem = props => {
     >
       <div
         ref={gradientContainer}
-        className={`${styles['projects-list-item-container']} ${styles['dimmed']}`}
+        className={styles['projects-list-item-container']}
       >
         <h3 ref={titleContainer}>{title}</h3>
 
