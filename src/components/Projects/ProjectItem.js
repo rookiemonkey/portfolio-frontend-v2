@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import ProjectItemTechnology from '~/components/Projects/ProjectItemTechnology';
 import animationVariants from "~/components/Projects/variants/projectItem";
