@@ -28,7 +28,7 @@ const ProjectItem = props => {
   return (
     <motion.li
       ref={_this}
-      variants={animationVariants.scaleIn}
+      variants={{ ...animationVariants.scaleIn, exit:{} }}
       onHoverStart={handleOnHoverStart}
       onHoverEnd={handleOnHoverEnd}
       className={styles['projects-list-item']} 

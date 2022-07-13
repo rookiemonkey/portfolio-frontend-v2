@@ -24,7 +24,10 @@ const Content = () => {
 
       <div ref={projectsContainer} className={styles['projects-container']}>
         <motion.ul
-          variants={animationVariants.projects}
+          variants={animationVariants.exitParentImmediately}
+          initial="initial"
+          animate="animate"
+          exit={animationVariants.fadeOut}
           className={styles['projects-list']}
         >
           {projects.data.map(project => <ProjectItem key={project.id} project={project} />)}
