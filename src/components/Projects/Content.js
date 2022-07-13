@@ -25,8 +25,6 @@ const Content = () => {
       <div ref={projectsContainer} className={styles['projects-container']}>
         <motion.ul
           variants={animationVariants.exitParentImmediately}
-          initial="initial"
-          animate="animate"
           exit={animationVariants.fadeOut}
           className={styles['projects-list']}
         >
